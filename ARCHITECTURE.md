@@ -32,15 +32,15 @@ loop:  deltaMs clamp 0..100; M5.update(); DebugConsole::poll(); Input::poll();
   `comboAC` -> goTo(PlayerSelect) from anywhere (also saves).
 - App logs every transition: `Serial.printf("[screen] %s -> %s\n", from, to)`.
 
-## Screen wiring
+## Screen wiring (self-registration)
 - Each screen lives in `src/screens/XxxScreen.cpp` (games in `src/games/`), defines a class
-  deriving `Screen`, and exposes `Screen& xxxScreen();` via `src/screens/AllScreens.h`
-  (one header declaring all accessor functions).
-- App.cpp owns a `Screen* table[ScreenId::COUNT]` filled in App::init from the accessors,
-  and a `parent[]` table for goBack (e.g. ShopBrowse->ShopCategory, games->GamesMenu,
-  everything else eventually ->Home; Home->Home; PlayerSelect has no parent).
-- Unimplemented Phase-2 screens: leave their table slot null; MainMenu must not list them
-  until implemented (feature flags PHASE2_* in Config.h once Phase 2 lands — no dead entries).
+  deriving `Screen` as a file-local static instance and registers it:
+  `namespace { MyScreen inst; ScreenRegistrar reg(ScreenId::Xxx, inst); }`.
+  App.cpp's registry table is a zero-initialised POD array, so static-init order is safe.
+- App.cpp owns the `Screen* table[ScreenId::COUNT]` plus a `parent[]` table for goBack
+  (ShopBrowse->ShopCategory, games->GamesMenu, most others ->Home; PlayerSelect no parent).
+  `goTo` on an unregistered id logs `[warn] screen missing` and does nothing — and MainMenu
+  must never list an unregistered screen (no dead entries, spec requirement).
 
 ## Debug console (QA harness) — src/DebugConsole.{h,cpp}
 Serial commands (single chars, newline-agnostic):

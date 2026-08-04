@@ -1,23 +1,49 @@
+#include <Arduino.h>
 #include <M5Unified.h>
+#include "Config.h"
+#include "Managers.h"
+#include "App.h"
+#include "DebugConsole.h"
 
-// Minimal boot validation build. Replaced by full App in Phase 1.
+namespace {
+uint32_t previousFrameMs = 0;
+}
+
 void setup() {
-  auto cfg = M5.config();
-  M5.begin(cfg);
+  auto config = M5.config();
+  config.internal_spk = true;
+  config.internal_imu = true;
+  M5.begin(config);
   Serial.begin(115200);
-  M5.Display.setBrightness(128);
-  M5.Display.fillScreen(TFT_NAVY);
-  M5.Display.setTextColor(TFT_WHITE);
-  M5.Display.setTextSize(3);
-  M5.Display.setCursor(40, 100);
-  M5.Display.print("POCKET BUDDY");
-  Serial.println("[boot] Pocket Buddy skeleton alive");
+
+  Gfx::init();
+  Save::init();
+  Clock::init();
+  Audio::init();
+  Audio::applyVolume(Save::data().settings.volume);
+  M5.Display.setBrightness(Save::data().settings.brightness);
+  Input::init();
+  App::init();
+  previousFrameMs = millis();
+  Serial.println("[boot] Pocket Buddy ready");
 }
 
 void loop() {
+  const uint32_t frameStartedMs = millis();
+  uint32_t deltaMs = frameStartedMs - previousFrameMs;
+  previousFrameMs = frameStartedMs;
+  if (deltaMs > 100) deltaMs = 100;
+
   M5.update();
-  if (M5.BtnA.wasPressed()) Serial.println("[btn] A");
-  if (M5.BtnB.wasPressed()) Serial.println("[btn] B");
-  if (M5.BtnC.wasPressed()) Serial.println("[btn] C");
-  delay(10);
+  DebugConsole::poll();
+  Input::poll();
+  Clock::update(deltaMs);
+  Buddy::update(deltaMs);
+  Audio::update();
+  Save::update();
+  App::tick();
+
+  const uint32_t workMs = millis() - frameStartedMs;
+  const uint32_t waitMs = workMs < FRAME_MS ? FRAME_MS - workMs : 1;
+  vTaskDelay(pdMS_TO_TICKS(waitMs));
 }

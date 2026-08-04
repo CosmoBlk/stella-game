@@ -59,4 +59,13 @@ public:
 
   // Frame draw entry — screens draw onto this canvas via Gfx::c()
   static uint32_t nowMs();
+
+  // Screen self-registration (called by ScreenRegistrar statics before init)
+  static void registerScreen(ScreenId id, Screen& s);
+};
+
+// Each screen .cpp registers itself:
+//   namespace { MyScreen inst; ScreenRegistrar reg(ScreenId::Xxx, inst); }
+struct ScreenRegistrar {
+  ScreenRegistrar(ScreenId id, Screen& s) { App::registerScreen(id, s); }
 };

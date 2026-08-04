@@ -26,6 +26,7 @@ namespace Input {
   bool shaken();                // shake event this frame
   // Debug injection (serial console QA harness)
   void inject(char code);       // 'a','b','c' short; 'A','B','C' long; 'x' comboAC
+  void injectMovement(uint32_t ms); // simulate IMU movement for QA (Frankie walk)
 }
 
 // ---------------- Audio ----------------

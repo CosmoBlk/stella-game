@@ -3,10 +3,10 @@
 #include "Models.h"
 
 // ---------------- Item catalog ----------------
-// Fixed IDs — never renumber. Ranges:
-//   0..49    Stella items
-//   50..109  Hugo items
-//   110..129 Shared treats/misc
+// Fixed IDs — never renumber. Authoritative table in CATALOG.md. Ranges:
+//   0..59    Stella items (chars 0-11, acc 12-26, clothes 27-38, toys 39-48, rooms 49-59)
+//   60..120  Hugo items  (chars 60-71, acc 72-87, clothes 88-97, toys 98-109, rooms 110-120)
+//   121..126 Shared treats
 struct ItemDef {
   uint16_t id;
   ItemCategory category;
@@ -21,10 +21,10 @@ const ItemDef* itemById(uint16_t id);
 
 // Well-known item ids (defaults / specials)
 constexpr uint16_t ITEM_STELLA_DEFAULT_PRINCESS = 0;
-constexpr uint16_t ITEM_STELLA_ROOM_CASTLE = 38;   // first Stella room
-constexpr uint16_t ITEM_HUGO_DEFAULT_SOCCER = 50;
-constexpr uint16_t ITEM_HUGO_ROOM_STADIUM = 88;    // first Hugo room
-constexpr uint16_t ITEM_JELLYBEAN_BAG = 110;
+constexpr uint16_t ITEM_STELLA_ROOM_CASTLE = 49;   // first Stella room
+constexpr uint16_t ITEM_HUGO_DEFAULT_SOCCER = 60;
+constexpr uint16_t ITEM_HUGO_ROOM_STADIUM = 110;   // first Hugo room
+constexpr uint16_t ITEM_JELLYBEAN_BAG = 121;
 constexpr uint16_t ITEM_NONE = 0xFFFF;
 
 // ---------------- Tasks ----------------
