@@ -3454,3 +3454,15 @@
 [screen] PLAYER SELECT -> HOME
 [dbg] state
 [dbg] player=STELLA coins=80 needs=80/80/80 level=1 day=1 owned=5 eq=1/65535/15/65535/49 jb=0 dad=0
+[save] loaded
+[clock] daily reset
+[boot] Pocket Buddy ready
+[   806][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] factory reset
+[screen] BOOT -> PLAYER SELECT
+[dbg] volume 2
+[  2171][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] state
+[dbg] player=HUGO coins=20 needs=80/80/80 level=2 day=1 owned=2 eq=60/65535/65535/65535/110 jb=0 dad=0

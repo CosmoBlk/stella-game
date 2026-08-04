@@ -93,3 +93,29 @@ Working log. Newest entries at the bottom. Decisions marked **D**, findings **F*
   Ariel/Rapunzel/Cinderella/Moana/Rumi). Hugo/dinos/sharks still generating.
 - **T** Tilt SIGN in SharkSwim/RollerCoaster unverifiable over serial — needs 10s in-hand
   check; flip one sign if inverted (noted for George).
+
+## Art integrated + Codex review fixes (00:1x-00:3x)
+- **F** Art agent delivered 43/43 sprites (gpt-image-1.5 — gpt-image-2 rejects transparent
+  bg; Spider-Man beat the trademark filter via "crimson ninja" + scripted recolour; great
+  white de-scarified per no-scary-imagery spec). Full set approved in montage review.
+- **D** Sprites.cpp: bitmap path (nearest-neighbour blit, 0xF81F key, 90° rotate for swim,
+  flat-colour mode for dino silhouettes) with procedural fallback. Clothing overlays are
+  NOT drawn on bitmap characters (they wear painted outfits); accessories still overlay.
+- **F** Codex review (xhigh, full diff) found 5 real P2s, all fixed: GamesMenu now honours
+  daily-mission target game via ctx.fromDailyMissions; spendCoins debounces (saveNow only
+  after grant — power-cut can't eat coins); removed double increments (maths
+  correctAnswers, totalFrankieWalks, totalDadMissionsCompleted). Lesson: my Phase-2
+  prompts told builders to increment totals directly AND raise events — the funnel rule
+  is now in README invariants.
+- **F** Firmware 887KB (13.5%). All 212 QA assertions green on the sprite build. Pushed.
+- **T** Awaiting Gemini review; then handover (factory reset, overnight mute, summary).
+
+## Handover (2026-08-05 morning)
+- **F** Gemini review hung -> killed per George. Codex xhigh review stands as the external
+  review (5 P2s found + fixed).
+- **F** Device factory-reset over serial: fresh profiles (Hugo 20 coins/L2, Stella 20/L1),
+  volume restored to NORMAL, sitting at WHO'S PLAYING?. Ready for the kids.
+- **T** Physical checks for George: tilt direction in Shark Swim / Roller Coaster (one-line
+  sign flip if inverted); general look of sprites on the real LCD.
+- **T** Nice-to-haves if wanted later: clothing overlays on bitmap characters, generated
+  room backdrops, Frankie/goalie anim frames, battery-life pass.
