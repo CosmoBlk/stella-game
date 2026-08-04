@@ -31,7 +31,7 @@ public:
     for (uint8_t i = 0; i < sizeof(definitions) / sizeof(definitions[0]); ++i) {
       if (App::screen(definitions[i].screen)) visible[count++] = i;
     }
-    if (selection >= count) selection = 0;
+    selection = 0;  // always open at the top — predictable for little kids
   }
 
   void update(uint32_t) override {}

@@ -307,3 +307,508 @@
 [screen] ColourMatchGame -> GamesMenu
 [dbg] state
 [dbg] player=STELLA coins=26 needs=65/65/65 level=1 day=2 owned=2
+[save] loaded
+[boot] Pocket Buddy ready
+[dbg] volume 0
+[  1823][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] BOOT -> PLAYER SELECT
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[dbg] state
+[dbg] player=HUGO coins=130 needs=65/65/65 level=2 day=2 owned=2
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[  3926][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> DadMission
+[dbg] inject b
+[screen] DadMission -> DadMissionDetail
+[dbg] inject h
+[  5756][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] DadMissionDetail -> DadMissionResult
+[dbg] state
+[dbg] player=HUGO coins=155 needs=65/65/65 level=2 day=2 owned=2
+[dbg] inject B
+[screen] DadMissionResult -> DadMission
+[dbg] inject B
+[screen] DadMission -> HOME
+[dbg] inject c
+[screen] HOME -> GamesMenu
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> RollerCoasterGame
+[dbg] inject b
+[dbg] movement 10s
+[ 33171][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] movement 10s
+[dbg] inject B
+[screen] RollerCoasterGame -> GamesMenu
+[dbg] inject B
+[screen] GamesMenu -> HOME
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> PLAYER SELECT
+[dbg] inject B
+[ 62396][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject B
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[ 76602][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject b
+[screen] HOME -> BUDDY
+[dbg] inject c
+[dbg] inject B
+[screen] BUDDY -> HOME
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> BUDDY
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[screen] BUDDY -> ROOM SELECT
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[113363][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[115104][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject B
+[screen] ROOM SELECT -> HOME
+[122964][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject c
+[screen] HOME -> GamesMenu
+[dbg] inject b
+[screen] GamesMenu -> BubblePopGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject B
+[screen] BubblePopGame -> GamesMenu
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> ColourMatchGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject B
+[screen] ColourMatchGame -> GamesMenu
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> ColourMatchGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject B
+[screen] ColourMatchGame -> GamesMenu
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> ColourMatchGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject B
+[screen] ColourMatchGame -> GamesMenu
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> ColourMatchGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject B
+[screen] ColourMatchGame -> GamesMenu
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> ColourMatchGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject B
+[screen] ColourMatchGame -> GamesMenu
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> ColourMatchGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject B
+[screen] ColourMatchGame -> GamesMenu
+[save] loaded
+[boot] Pocket Buddy ready
+[dbg] volume 0
+[  1834][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] BOOT -> PLAYER SELECT
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[screen] HOME -> HOME
+[  4077][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject b
+[screen] MAIN MENU -> BUDDY
+[screen] BUDDY -> HOME
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> Tasks
+[screen] Tasks -> HOME
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> GamesMenu
+[screen] GamesMenu -> HOME
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> ShopCategory
+[screen] ShopCategory -> HOME
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> DadMission
+[screen] DadMission -> HOME
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> FrankieWalkIntro
+[screen] FrankieWalkIntro -> HOME
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> DailyMissions
+[screen] DailyMissions -> HOME
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> CollectionCategory
+[screen] CollectionCategory -> HOME
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> GetDressedTimer
+[screen] GetDressedTimer -> HOME
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> SETTINGS
+[screen] SETTINGS -> HOME
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> PLAYER SELECT
+[dbg] inject x
+[ 39627][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] PLAYER SELECT -> PLAYER SELECT
+[dbg] inject a
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[dbg] state
+[dbg] player=HUGO coins=155 needs=64/64/64 level=2 day=2 owned=2
+[screen] HOME -> DadMission
+[ 41401][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject b
+[screen] DadMission -> DadMissionDetail
+[dbg] inject h
+[ 41892][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] DadMissionDetail -> DadMissionResult
+[dbg] state
+[dbg] player=HUGO coins=190 needs=64/64/64 level=2 day=2 owned=2
+[screen] DadMissionResult -> FrankieWalkIntro
+[dbg] inject b
+[screen] FrankieWalkIntro -> FrankieWalk
+[dbg] movement 10s
+[dbg] movement 10s
+[dbg] state
+[dbg] player=HUGO coins=190 needs=64/64/64 level=2 day=2 owned=2
+[screen] FrankieWalk -> DailyMissions
+[screen] DailyMissions -> CollectionCategory
+[dbg] inject b
+[screen] CollectionCategory -> CollectionGrid
+[dbg] inject c
+[dbg] inject B
+[screen] CollectionGrid -> CollectionCategory
+[ 62622][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] CollectionCategory -> GamesMenu
+[dbg] inject b
+[screen] GamesMenu -> PenaltyKickGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[screen] PenaltyKickGame -> GamesMenu
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> MathsGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[ 71869][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[ 73437][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject b
+[dbg] inject c
+[ 75098][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] MathsGame -> GamesMenu
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> DinosaurGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[screen] DinosaurGame -> GamesMenu
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> SharkSwimGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[screen] SharkSwimGame -> GamesMenu
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> RollerCoasterGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[screen] RollerCoasterGame -> GamesMenu
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> BubblePopGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[screen] BubblePopGame -> GamesMenu
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> ColourMatchGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[screen] ColourMatchGame -> GamesMenu
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> PrincessDanceGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[123205][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote

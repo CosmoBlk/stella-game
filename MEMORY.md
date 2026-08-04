@@ -56,3 +56,19 @@ Working log. Newest entries at the bottom. Decisions marked **D**, findings **F*
   (gpt-image-2), 48x48 quantized RGB565 arrays. Art agent running (Assets.h/AssetsData.h/
   Assets.cpp + assets/). Integration into Sprites.cpp (characters/dinos/sharks/goalie) is
   mine after it lands; procedural art remains fallback + items/rooms.
+
+## Phase 2 integrated + QA green (23:2x)
+- **F** Phase 2 compiled FIRST TRY (686KB). Missions engine wired into App::raiseEvent;
+  Clock delegates rolls to Missions::rollDaily.
+- **F** Real bug fixed: MainMenu remembered last selection across visits -> now resets to top
+  on enter (predictability for a 4yo). GamesMenu was fine (my ColourMatch-loop diagnosis was
+  harness desync onto Stella profile, not product).
+- **D** DebugConsole gained: 'w' movement inject (10s), direct jumps H/D/F/M/K/G, 'i' screen id.
+  QA scripts now jump-based = deterministic. phase2 script: 61/61 PASS (menu sweep 11/11
+  distinct, dad mission +35 coins, Frankie walk + movement, collection grid, all 8 games).
+- **F** Pushed to github.com/CosmoBlk/stella-game (PRIVATE — licensed-character pixel art,
+  never make public). History cleaned of .pio before first push.
+- **T** Next build: extended 's' dump (equipped/jellybeans), 'r' factory reset, script_final
+  (buddy flows + Elsa/Spider-Man buy+equip). Then sprites integration, reviews, handover
+  (factory reset, overnight mute, volume note for George).
+- **F** George asleep — full autonomy for the rest of the build.

@@ -55,6 +55,16 @@ void poll() {
         Input::injectMovement(10000);
         Serial.println("[dbg] movement 10s");
         break;
+      // Direct screen jumps for deterministic QA
+      case 'H': App::goTo(ScreenId::Home); break;
+      case 'D': App::goTo(ScreenId::DadMission); break;
+      case 'F': App::goTo(ScreenId::FrankieWalkIntro); break;
+      case 'M': App::goTo(ScreenId::DailyMissions); break;
+      case 'K': App::goTo(ScreenId::CollectionCategory); break;
+      case 'G': App::goTo(ScreenId::GamesMenu); break;
+      case 'i':
+        Serial.printf("[dbg] screen=%u\n", static_cast<unsigned>(App::current()));
+        break;
       case '0': case '1': case '2':
         Save::data().settings.volume = command - '0';
         Audio::applyVolume(Save::data().settings.volume);

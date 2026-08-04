@@ -190,6 +190,7 @@ def script_games(h: Harness):
 
 def _coins(h: Harness):
     """Send 's', parse coins= from the dump."""
+    h.drain(0.3)
     h.ser.write(b"s")
     deadline = time.time() + 3
     while time.time() < deadline:
@@ -201,17 +202,49 @@ def _coins(h: Harness):
 
 
 def script_phase2(h: Harness):
-    """Dad missions, Frankie walk, daily missions, collection, all 8 games."""
+    """Dad missions, Frankie walk, daily missions, collection, all 8 games.
+
+    Uses debug jump commands (H/D/F/M/K/G) so every flow starts deterministic.
+    """
     h.reset_device()
     h.step("", r"\[boot\] Pocket Buddy ready", 15, "boots")
     h.mute()
     h.step("", PSEL, 8, "PlayerSelect")
     h.step("b", r"->\s*HOME", 5, "Hugo -> Home")
+    # --- menu coverage: order-agnostic sweep of all entries ---
+    seen = set()
+    for i in range(11):
+        h.step("H", "", 0, "")
+        h.drain(0.4)
+        h.step("B", r"->\s*MAIN ?MENU", 6, f"menu open {i}")
+        h.ser.write(b"c" * i and b"")  # placeholder, replaced below
+        for _ in range(i):
+            h.ser.write(b"c")
+            time.sleep(0.3)
+        h.ser.write(b"b")
+        deadline = time.time() + 5
+        target = None
+        while time.time() < deadline:
+            line = h._readline()
+            m = re.search(r"MAIN MENU\s*->\s*(.+)$", line or "", re.IGNORECASE)
+            if m:
+                target = m.group(1).strip()
+                break
+        if target:
+            seen.add(target)
+        h.drain(0.6)
+    print(f"  INFO  menu targets: {sorted(seen)}")
+    if len(seen) >= 10:
+        h.passed.append(f"menu opens {len(seen)} distinct screens")
+    else:
+        h.failed.append(f"menu only reached {len(seen)} screens: {sorted(seen)}")
+    # --- back to Hugo Home (menu sweep may have switched player) ---
+    h.step("x", PSEL, 6, "back to PlayerSelect")
+    h.step("a", "", 0, "highlight Hugo")
+    h.step("b", r"->\s*HOME", 5, "Hugo again")
     # --- dad mission with reward ---
     before = _coins(h)
-    h.step("B", r"->\s*MAIN ?MENU", 6, "open MainMenu")
-    h.step("cccc", "", 0, "highlight DAD MISSIONS")
-    h.step("b", r"->\s*DAD", 5, "open Dad Missions")
+    h.step("D", r"->\s*DAD", 5, "jump to Dad Missions")
     h.step("b", r"->\s*DAD ?MISSION ?DETAIL", 5, "open mission detail")
     h.step("h", r"->\s*DAD ?MISSION ?RESULT", 6, "hold-B completes dad mission")
     h.drain(3.5)
@@ -222,39 +255,39 @@ def script_phase2(h: Harness):
     else:
         print(f"  FAIL  dad mission reward (before={before} after={after})")
         h.failed.append("dad mission reward")
-    h.step("B", r"->\s*(HOME|DAD)", 6, "leave dad missions")
-    h.drain(1.0)
     # --- Frankie walk with simulated movement ---
-    h.step("B", r"->\s*MAIN ?MENU", 6, "menu again")
-    h.step("ccccc", "", 0, "highlight WALK FRANKIE")
-    h.step("b", r"->\s*FRANKIE", 5, "Frankie intro")
+    h.step("F", r"->\s*FRANKIE", 5, "jump to Frankie intro")
     h.step("b", r"->\s*FRANKIE ?WALK", 5, "start walk")
     h.step("w", r"\[dbg\] movement", 3, "inject movement")
     h.drain(6.0)
     h.step("w", r"\[dbg\] movement", 3, "more movement")
     h.drain(4.0)
-    h.step("B", r"->\s*FRANKIE|->\s*HOME", 8, "exit walk")
-    h.drain(1.0)
-    h.step("B", r"->\s*(HOME|MAIN)", 8, "back home-ish")
-    h.drain(1.0)
+    crashed = False
+    h.ser.write(b"s")
+    deadline = time.time() + 2
+    while time.time() < deadline:
+        if "Pocket Buddy ready" in (h._readline() or ""):
+            crashed = True
+    if crashed:
+        h.failed.append("frankie walk crashed")
+    else:
+        h.passed.append("frankie walk survives movement")
     # --- daily missions screen ---
-    h.step("B", r"->\s*MAIN ?MENU", 6, "menu for daily missions")
-    h.step("cccccc", "", 0, "highlight DAILY MISSIONS")
-    h.step("b", r"->\s*DAILY", 5, "open Daily Missions")
-    h.step("B", r"->\s*HOME", 6, "back to Home")
+    h.step("M", r"->\s*DAILY", 5, "jump to Daily Missions")
+    h.drain(1.0)
     # --- collection book ---
-    h.step("B", r"->\s*MAIN ?MENU", 6, "menu for collection")
-    h.step("ccccccc", "", 0, "highlight COLLECTION")
-    h.step("b", r"->\s*COLLECTION", 5, "open Collection")
+    h.step("K", r"->\s*COLLECTION", 5, "jump to Collection")
     h.step("b", r"->\s*COLLECTION ?GRID", 5, "open a grid")
     h.step("c", "", 0, "page")
     h.step("B", r"->\s*COLLECTION", 5, "back to categories")
-    h.step("B", r"->\s*HOME", 6, "back Home")
-    # --- all 8 games ---
-    h.step("c", r"->\s*GAMES", 5, "GamesMenu")
+    # --- all 8 games, deterministic: fresh GamesMenu jump each time ---
     entered = set()
     for i in range(8):
-        h.drain(0.8)
+        h.step("G", r"->\s*GamesMenu", 5, "")
+        h.drain(0.6)
+        for _ in range(i):
+            h.ser.write(b"c")
+            time.sleep(0.3)
         h.ser.write(b"b")
         name = None
         deadline = time.time() + 5
@@ -265,34 +298,32 @@ def script_phase2(h: Harness):
                 name = m.group(1)
                 break
         if name:
-            print(f"  PASS  entered {name}")
-            h.passed.append(f"enter {name}")
             entered.add(name)
+            h.ser.write(b"w")
+            for _ in range(3):
+                for ch in "abc":
+                    h.ser.write(ch.encode())
+                    time.sleep(0.3)
+                h.drain(0.4)
+            crashed = False
+            deadline = time.time() + 1.0
+            while time.time() < deadline:
+                if "Pocket Buddy ready" in (h._readline() or ""):
+                    crashed = True
+            if crashed:
+                print(f"  FAIL  {name} crash-reboot")
+                h.failed.append(f"{name} crashed")
+            else:
+                print(f"  PASS  {name} mash-survived")
+                h.passed.append(f"{name} ok")
         else:
-            print(f"  FAIL  enter game slot {i}")
-            h.failed.append(f"enter game slot {i}")
-        h.ser.write(b"w")  # tilt games get movement too
-        for _ in range(3):
-            for ch in "abc":
-                h.ser.write(ch.encode())
-                time.sleep(0.35)
-            h.drain(0.5)
-        crashed = False
-        deadline = time.time() + 1.0
-        while time.time() < deadline:
-            if "Pocket Buddy ready" in (h._readline() or ""):
-                crashed = True
-        if crashed:
-            print("  FAIL  crash-reboot detected")
-            h.failed.append(f"{name or i} crashed")
-            break
-        h.step("B", r"->\s*GamesMenu", 8, f"exit {name or i}")
-        h.step("c", "", 0, "next game")
-    print(f"  INFO  distinct games entered: {sorted(entered)}")
-    if len(entered) >= 7:
-        h.passed.append("entered 7+ distinct games")
+            h.failed.append(f"game slot {i} did not open")
+        h.drain(0.5)
+    print(f"  INFO  distinct games: {sorted(entered)}")
+    if len(entered) == 8:
+        h.passed.append("all 8 games entered")
     else:
-        h.failed.append(f"only {len(entered)} distinct games entered")
+        h.failed.append(f"only {len(entered)}/8 games entered: {sorted(entered)}")
 
 
 SCRIPTS = {"smoke": script_smoke, "deep": script_deep, "games": script_games,

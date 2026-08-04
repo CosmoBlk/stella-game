@@ -35,7 +35,9 @@ DATA_H = ROOT / "src" / "AssetsData.h"
 ASSETS_H = ROOT / "src" / "Assets.h"
 ASSETS_CPP = ROOT / "src" / "Assets.cpp"
 
-MODEL = "gpt-image-2"
+# gpt-image-2 rejects background=transparent (and returns RGB with no alpha even
+# when asked via prompt) — verified 2026-08-04. gpt-image-1.5 supports true alpha.
+MODEL = "gpt-image-1.5"
 SIZE = 48
 SENTINEL = 0xF81F  # pure magenta in RGB565 = transparent
 MAX_COLOURS = 15
