@@ -7,6 +7,12 @@ constexpr int SCREEN_H = 240;
 constexpr int TARGET_FPS = 25;
 constexpr uint32_t FRAME_MS = 1000 / TARGET_FPS;
 
+// ---------- Power ----------
+constexpr uint32_t IDLE_DIM_MS = 30000;
+constexpr uint32_t IDLE_OFF_MS = 300000;
+constexpr uint8_t IDLE_DIM_BRIGHTNESS_PCT = 30;
+constexpr uint16_t CPU_MHZ = 160;
+
 // ---------- Input ----------
 constexpr uint32_t LONG_PRESS_MS = 800;        // navigation long press
 constexpr uint32_t TASK_HOLD_MS = 2000;        // hold-B task completion

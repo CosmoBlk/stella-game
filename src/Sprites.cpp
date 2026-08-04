@@ -1,5 +1,6 @@
 #include "Sprites.h"
 #include "Assets.h"
+#include "Bg.h"
 #include "Managers.h"
 #include <M5Unified.h>
 #include <math.h>
@@ -1704,6 +1705,11 @@ void drawRoom(uint16_t roomItemId) {
   M5Canvas& canvas = Gfx::c();
   uint16_t id = roomItemId;
   if (!((id >= 49 && id <= 59) || (id >= 110 && id <= 120))) id = 49;
+
+  if (Bg::ensureRoom(id)) {
+    Bg::draw();
+    return;
+  }
 
   switch (id) {
     case 49:

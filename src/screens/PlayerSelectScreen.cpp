@@ -1,5 +1,7 @@
 #include "Screen.h"
 #include "../App.h"
+#include "../Content.h"
+#include "../Sprites.h"
 #include "../UI.h"
 #include "../Managers.h"
 
@@ -12,9 +14,10 @@ public:
   void draw() override {
     M5Canvas& canvas = Gfx::c();
     UI::drawBackground();
-    UI::drawBigCentred("WHO'S PLAYING?", 30, 2, UI::theme().text);
-    drawCard(18, PlayerId::Hugo, "HUGO", IconId::Ball, 0x249F, 0xFD20);
-    drawCard(166, PlayerId::Stella, "STELLA", IconId::Crown, 0xF81F, 0xFEC0);
+    UI::drawBigCentred("HUGO + STELLA", 18, 2, UI::theme().text);
+    UI::drawBigCentred("WHO'S PLAYING?", 42, 1, UI::theme().accent);
+    drawCard(8, PlayerId::Hugo, "HUGO", 0x249F, 0xFD20);
+    drawCard(164, PlayerId::Stella, "STELLA", 0xF81F, 0xFEC0);
     canvas.setTextDatum(middle_center);
     canvas.setTextColor(UI::theme().text);
     canvas.setTextSize(1);
@@ -47,18 +50,26 @@ public:
 private:
   PlayerId selected = PlayerId::Hugo;
 
-  void drawCard(int x, PlayerId id, const char* label, IconId icon, uint16_t fill, uint16_t accent) {
+  void drawCard(int x, PlayerId id, const char* label, uint16_t fill, uint16_t accent) {
     M5Canvas& canvas = Gfx::c();
     const bool active = selected == id;
-    const int y = active ? 57 : 63;
-    canvas.fillRoundRect(x, y, 136, 122, 14, fill);
-    canvas.drawRoundRect(x, y, 136, 122, 14, active ? accent : 0xFFFF);
-    if (active) canvas.drawRoundRect(x + 3, y + 3, 130, 116, 12, accent);
-    UI::drawIcon(icon, x + 68, y + 45, 54, 0xFFFF, accent);
+    const int y = active ? 55 : 61;
+    canvas.fillRoundRect(x, y, 148, 134, 16, fill);
+    canvas.drawRoundRect(x, y, 148, 134, 16, active ? accent : 0xFFFF);
+    if (active) canvas.drawRoundRect(x + 3, y + 3, 142, 128, 14, accent);
+    if (id == PlayerId::Hugo) {
+      // TODO(art): swap to artKid()
+      Sprites::drawCharacter(ITEM_HUGO_DEFAULT_SOCCER, x + 74, y + 65, 82,
+                             Anim::Happy, App::nowMs());
+    } else {
+      // TODO(art): swap to artKid()
+      Sprites::drawCharacter(ITEM_STELLA_DEFAULT_PRINCESS, x + 74, y + 65, 82,
+                             Anim::Happy, App::nowMs());
+    }
     canvas.setTextDatum(middle_center);
     canvas.setTextColor(0xFFFF);
     canvas.setTextSize(2);
-    canvas.drawString(label, x + 68, y + 92);
+    canvas.drawString(label, x + 74, y + 111);
     canvas.setTextDatum(top_left);
   }
 };

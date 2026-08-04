@@ -36,6 +36,8 @@ struct TaskDef {
 };
 extern const TaskDef TASKS[];
 extern const int TASK_COUNT;
+extern const uint8_t ACTIVE_TASKS[];
+extern const int ACTIVE_TASK_COUNT;
 constexpr uint8_t TASK_GET_DRESSED = 1;  // linked to Get Dressed Timer
 
 // ---------------- Dad missions ----------------

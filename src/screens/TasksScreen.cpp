@@ -11,7 +11,7 @@ namespace {
 class TasksScreen final : public Screen {
 public:
   void enter() override {
-    if (selected_ >= TASK_COUNT) selected_ = 0;
+    if (selected_ >= ACTIVE_TASK_COUNT) selected_ = 0;
   }
 
   void update(uint32_t) override {}
@@ -21,25 +21,25 @@ public:
     UI::drawHeader("TASKS");
 
     drawTaskCard(selected_, 36, true);
-    drawTaskCard((selected_ + 1) % TASK_COUNT, 121, false);
+    drawTaskCard((selected_ + 1) % ACTIVE_TASK_COUNT, 121, false);
 
     UI::drawButtonBar("PREV", "OPEN", "NEXT",
                       IconId::ArrowL, IconId::Tick, IconId::ArrowR);
   }
 
   void onButtonA() override {
-    selected_ = (selected_ + TASK_COUNT - 1) % TASK_COUNT;
+    selected_ = (selected_ + ACTIVE_TASK_COUNT - 1) % ACTIVE_TASK_COUNT;
     Audio::play(Sfx::Select);
   }
 
   void onButtonB() override {
-    App::ctx.taskId = TASKS[selected_].id;
+    App::ctx.taskId = ACTIVE_TASKS[selected_];
     Audio::play(Sfx::Select);
     App::goTo(ScreenId::TaskDetail);
   }
 
   void onButtonC() override {
-    selected_ = (selected_ + 1) % TASK_COUNT;
+    selected_ = (selected_ + 1) % ACTIVE_TASK_COUNT;
     Audio::play(Sfx::Select);
   }
 
@@ -49,7 +49,7 @@ private:
   int selected_ = 0;
 
   void drawTaskCard(int index, int y, bool selected) {
-    const TaskDef& task = TASKS[index];
+    const TaskDef& task = TASKS[ACTIVE_TASKS[index]];
     const bool done = App::profile().daily.completedTasks[task.id];
     M5Canvas& canvas = Gfx::c();
     const Theme& theme = UI::theme();

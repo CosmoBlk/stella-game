@@ -6,7 +6,7 @@
 namespace {
 void printHelp() {
   Serial.println("[dbg] a/b/c PRESS  A/B/C LONG  x A+C  h HOLD-B");
-  Serial.println("[dbg] s STATE  d DAILY RESET  t +1H  g +100 COINS  0/1/2 VOLUME  ? HELP");
+  Serial.println("[dbg] s STATE  d DAILY RESET  t +1H  g +100 COINS  z POWER TIMERS  0/1/2 VOLUME  ? HELP");
 }
 
 void dumpState() {
@@ -59,6 +59,9 @@ void poll() {
       case 'w':
         Input::injectMovement(10000);
         Serial.println("[dbg] movement 10s");
+        break;
+      case 'z':
+        Power::debugShortTimers();
         break;
       // Direct screen jumps for deterministic QA
       case 'H': App::goTo(ScreenId::Home); break;

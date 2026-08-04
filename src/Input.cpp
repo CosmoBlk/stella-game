@@ -143,6 +143,12 @@ void poll() {
     }
     shakeAbove = above;
   }
+
+  if (downA || downB || downC || comboEvent || shakeEvent ||
+      buttons[0].pressedEvent || buttons[1].pressedEvent || buttons[2].pressedEvent ||
+      buttons[0].longEvent || buttons[1].longEvent || buttons[2].longEvent) {
+    Power::noteActivity();
+  }
 }
 
 bool pressedA() { return buttons[0].pressedEvent; }
@@ -169,10 +175,12 @@ float moveMagnitude() {
 bool shaken() { return shakeEvent; }
 
 void injectMovement(uint32_t ms) {
+  Power::noteActivity();
   injectedMoveUntil = millis() + ms;
 }
 
 void inject(char code) {
+  Power::noteActivity();
   switch (code) {
     case 'a': pendingShort[0] = true; break;
     case 'b': pendingShort[1] = true; break;

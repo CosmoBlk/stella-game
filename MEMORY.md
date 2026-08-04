@@ -119,3 +119,36 @@ Working log. Newest entries at the bottom. Decisions marked **D**, findings **F*
   sign flip if inverted); general look of sprites on the real LCD.
 - **T** Nice-to-haves if wanted later: clothing overlays on bitmap characters, generated
   room backdrops, Frankie/goalie anim frames, battery-life pass.
+
+## Phase 3 brief (2026-08-05, George)
+- **D** App display name: **HUGO + STELLA** (boot + player select; serial log line unchanged
+  for QA regex stability).
+- **D** Home UX rebuild: ONE infinite carousel replaces A=Tasks/B=Buddy/C=Games. Ring
+  (rightward from HOME card): HOME → games 1..8 → buddy actions (room, dress up, jelly
+  beans, sleep, play, feed) → tasks 5..1 → HOME. So: A(left) = tasks then buddy actions;
+  C(right) = games. B activates card. Long-B main menu + A+C player-select unchanged.
+- **D** Active tasks cut to 5: GET DRESSED(1, launches timer), WALK FRANKIE(9, launches
+  walk; walk completion marks task, no double coins), PUT PYJAMAS AWAY(13),
+  BRUSH TEETH(0), PACK AWAY TOYS(2). Full defs stay in Content; ACTIVE_TASKS drives UI.
+- **D** Art: player-select kid tiles (pixel sprites), 22 room backgrounds (160x120 RGB565
+  in LittleFS, prescaled to a PSRAM canvas at room change), ~34 UI icons 24x24 (C arrays,
+  procedural fallback), same GBC style. Fonts: audit-only pass (consistency/legibility).
+- **D** Shark Swim: tilt response +5% (lerp 0.13 -> 0.137).
+- **D** Battery pass: CPU 240->160MHz, idle dim 30s -> 30% brightness, auto power-off 5min
+  (saveNow + NIGHT NIGHT + powerOff), 'z' debug shortens timers for QA, '[power]' logs.
+- **D** QA muted again for the phase. Gemini reviews get a 20-min watchdog kill.
+- **D** (addendum) Carousel ring gains a MENU card (opens MainMenu) at the far seam: leftward from HOME: t1..t5, feed, play, sleep, beans, dressup, room, MENU, g8..g1. Long-B shortcut unchanged.
+
+## Phase 3 code landed (01:0x)
+- **F** Carousel home live: ring HOME -> games(1-8, player-ordered) -> room/dressup/beans/
+  sleep/play/feed -> MENU -> tasks(5 reversed). 1 left = Get Dressed timer, 2 left = Walk
+  Frankie, 6 left = MENU card. Games' back target changed GamesMenu -> Home (carousel is
+  the launch surface now).
+- **F** Battery pass on-device: CPU 160MHz, 30s dim -> 30%, 5min auto-off. M5.Power.powerOff
+  replaced with ext0 deep sleep (wake = Button B, GPIO38 active-low — IP5306 can't do true
+  I2C power-off; NIGHT NIGHT screen says "PRESS MIDDLE BUTTON TO WAKE").
+- **F** Shark tilt +5% (0.13 -> 0.137). App title now HUGO + STELLA on boot/select.
+- **F** Bg module: LittleFS 160x120 RGB565 -> 2x prescaled PSRAM canvas; drawRoom uses it
+  with procedural fallback (files land with art round 2).
+- **F** QA rewritten for carousel + new battery suite: 236 assertions across 6 suites, all
+  green. WALK FRANKIE task auto-ticks on walk completion (no double coins).

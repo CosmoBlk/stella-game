@@ -20,6 +20,7 @@ void setup() {
   Save::init();
   Clock::init();
   Audio::init();
+  Power::init();
   Audio::applyVolume(Save::data().settings.volume);
   M5.Display.setBrightness(Save::data().settings.brightness);
   Input::init();
@@ -37,6 +38,7 @@ void loop() {
   M5.update();
   DebugConsole::poll();
   Input::poll();
+  Power::update(deltaMs);
   Clock::update(deltaMs);
   Buddy::update(deltaMs);
   Audio::update();

@@ -24,7 +24,7 @@ public:
     UI::drawBackground();
     const int bounce = static_cast<int>(sinf(elapsedMs * 0.008f) * 10.0f);
     UI::drawIcon(IconId::Star, 160, 66 + bounce, 45, 0xFEC0, 0xFD20);
-    UI::drawBigCentred("POCKET BUDDY", 126, 3, UI::theme().text);
+    UI::drawBigCentred("HUGO + STELLA", 126, 3, UI::theme().text);
     UI::drawBigCentred("HELLO, FRIEND!", 164, 1, UI::theme().accent);
   }
 

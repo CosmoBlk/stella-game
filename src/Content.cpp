@@ -167,6 +167,9 @@ const TaskDef TASKS[] = {
 
 const int TASK_COUNT = sizeof(TASKS) / sizeof(TASKS[0]);
 
+const uint8_t ACTIVE_TASKS[] = {1, 9, 13, 0, 2};
+const int ACTIVE_TASK_COUNT = sizeof(ACTIVE_TASKS) / sizeof(ACTIVE_TASKS[0]);
+
 const DadMissionDef DAD_MISSIONS[] = {
   {0, "FIND SOMETHING RED", ICON(Circle), 20, 25},
   {1, "FIND SOMETHING BLUE", ICON(Circle), 20, 25},

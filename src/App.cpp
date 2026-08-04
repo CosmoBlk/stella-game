@@ -47,9 +47,10 @@ void configureParents() {
   parents[static_cast<uint8_t>(ScreenId::DadMissionDetail)] = ScreenId::DadMission;
   parents[static_cast<uint8_t>(ScreenId::DadMissionResult)] = ScreenId::DadMission;
   parents[static_cast<uint8_t>(ScreenId::CollectionGrid)] = ScreenId::CollectionCategory;
+  // Games back out to Home: kids launch them from the home carousel now.
   for (uint8_t i = static_cast<uint8_t>(ScreenId::PenaltyKickGame);
        i <= static_cast<uint8_t>(ScreenId::SharkSwimGame); ++i) {
-    parents[i] = ScreenId::GamesMenu;
+    parents[i] = ScreenId::Home;
   }
   parents[static_cast<uint8_t>(ScreenId::ShopBrowse)] = ScreenId::ShopCategory;
   parents[static_cast<uint8_t>(ScreenId::ShopPreview)] = ScreenId::ShopBrowse;
@@ -176,7 +177,10 @@ void App::raiseEvent(GameEvent event, uint8_t param, uint8_t count) {
   switch (event) {
     case GameEvent::TaskCompleted: active.totalTasksCompleted += count; break;
     case GameEvent::DadMissionDone: active.totalDadMissionsCompleted += count; break;
-    case GameEvent::FrankieWalked: active.totalFrankieWalks += count; break;
+    case GameEvent::FrankieWalked:
+      active.totalFrankieWalks += count;
+      if (!active.daily.completedTasks[9]) active.daily.completedTasks[9] = true;
+      break;
     case GameEvent::GamePlayed: active.totalGamesPlayed += count; break;
     case GameEvent::MathsCorrect: active.maths.correctAnswers += count; break;
     case GameEvent::GetDressedDone:

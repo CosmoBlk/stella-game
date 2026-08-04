@@ -3466,3 +3466,2205 @@
 [save] wrote
 [dbg] state
 [dbg] player=HUGO coins=20 needs=80/80/80 level=2 day=1 owned=2 eq=60/65535/65535/65535/110 jb=0 dad=0
+[dbg] volume 0
+[save] loaded
+[power] cpu 160MHz
+[boot] Pocket Buddy ready
+[dbg] volume 0
+[  1150][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] factory reset
+[screen] BOOT -> PLAYER SELECT
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[  1577][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  1654][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  1731][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  1808][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] state
+[dbg] player=HUGO coins=20 needs=80/80/80 level=2 day=1 owned=2 eq=60/65535/65535/65535/110 jb=0 dad=0
+[  1886][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  1968][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2045][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2122][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2199][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[  2595][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject B
+[screen] MAIN MENU -> HOME
+[  2796][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2876][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2955][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject b
+[screen] HOME -> BUDDY
+[  3034][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3110][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3186][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3261][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject B
+[screen] BUDDY -> HOME
+[  3338][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3418][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3497][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3576][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3655][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject a
+[  3735][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3815][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3894][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3973][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject b
+[screen] HOME -> GetDressedTimer
+[dbg] inject B
+[screen] GetDressedTimer -> HOME
+[  4410][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4490][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4569][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4648][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4727][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject a
+[  4807][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4887][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4966][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5045][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject a
+[  5124][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5204][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5283][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5362][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5441][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject b
+[screen] HOME -> FrankieWalkIntro
+[dbg] inject B
+[screen] FrankieWalkIntro -> HOME
+[  5887][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5967][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  6046][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  6125][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[  6204][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  6284][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  6363][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  6442][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  6521][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject b
+[screen] HOME -> PenaltyKickGame
+[dbg] inject B
+[screen] PenaltyKickGame -> HOME
+[  6967][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7047][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7126][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7205][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject a
+[  7285][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7365][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7444][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7523][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7602][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject a
+[  7681][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7761][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7840][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7919][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject a
+[  7998][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8077][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8156][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8235][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8314][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject a
+[  8393][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8472][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8551][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8630][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject a
+[  8709][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8788][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8867][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8946][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9025][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject a
+[  9104][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9183][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9261][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9339][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject b
+[screen] HOME -> MAIN MENU
+[dbg] inject B
+[screen] MAIN MENU -> HOME
+[  9789][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9869][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9948][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10027][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10106][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject x
+[ 10186][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] HOME -> PLAYER SELECT
+[dbg] inject c
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[ 10936][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 11020][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 11103][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 11186][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[dbg] state
+[dbg] player=STELLA coins=20 needs=80/80/80 level=1 day=1 owned=2 eq=0/65535/65535/65535/49 jb=0 dad=0
+[save] loaded
+[power] cpu 160MHz
+[boot] Pocket Buddy ready
+[dbg] volume 0
+[  1150][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] factory reset
+[screen] BOOT -> PLAYER SELECT
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[  1578][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  1655][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  1732][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  1809][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject a
+[  1886][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  1963][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2040][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2117][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2194][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject a
+[  2271][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2348][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2424][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2500][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2576][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject a
+[  2653][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[  2799][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2879][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject a
+[  2958][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3037][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3115][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3195][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3273][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject b
+[screen] HOME -> TaskDetail
+[dbg] inject h
+[  3725][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] TaskDetail -> TaskComplete
+[screen] TaskComplete -> Tasks
+[dbg] state
+[dbg] player=HUGO coins=30 needs=80/80/80 level=2 day=1 owned=2 eq=60/65535/65535/65535/110 jb=0 dad=0
+[screen] Tasks -> HOME
+[  9078][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9155][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9232][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9309][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9386][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9463][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9540][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9617][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9694][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9771][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9848][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9925][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10002][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> ShopCategory
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] ShopCategory -> ShopBrowse
+[shop] browsing BAG OF JELLY BEANS
+[dbg] inject b
+[screen] ShopBrowse -> PurchaseConfirm
+[dbg] inject b
+[shop] bought BAG OF JELLY BEANS
+[ 14321][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] PurchaseConfirm -> PurchaseResult
+[screen] PurchaseResult -> ShopBrowse
+[shop] browsing BAG OF JELLY BEANS
+[dbg] state
+[dbg] player=HUGO coins=20 needs=80/80/80 level=2 day=1 owned=2 eq=60/65535/65535/65535/110 jb=10 dad=0
+[dbg] grant 100 coins
+[ 19282][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[save] loaded
+[power] cpu 160MHz
+[boot] Pocket Buddy ready
+[dbg] volume 0
+[  1843][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] BOOT -> PLAYER SELECT
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[  2934][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3014][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3094][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3173][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3252][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] state
+[dbg] player=HUGO coins=120 needs=80/80/80 level=2 day=1 owned=2 eq=60/65535/65535/65535/110 jb=10 dad=0
+[   754][E][vfs_api.cpp:105] open(): /littlefs/save.bin does not exist, no permits for creation
+[save] restored �ackup
+[power] cpu 160MHz
+[boot] Pocket Buddy ready
+[dbg] volume 0
+[  1334][E][vfs_api.cpp:105] open(): /littlefs/save.bin does not exist, no permits for creation
+[save] wrote
+[dbg] factory reset
+[screen] BOOT -> PLAYER SELECT
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[  1569][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  1647][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  1725][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  1803][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[screen] HOME -> HOME
+[  1881][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  1959][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2037][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2115][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2193][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2271][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2349][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2427][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2505][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2583][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[  2630][E][vfs_api.cpp:182] remove(): /save.bak does not exists or is directory
+[save] wrote
+[  2742][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2822][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[  2903][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  2983][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3063][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3143][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject b
+[screen] HOME -> PenaltyKickGame
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject B
+[screen] PenaltyKickGame -> HOME
+[  8341][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8421][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8501][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8581][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8661][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8741][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8821][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8901][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8981][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9061][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9141][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[screen] HOME -> HOME
+[  9222][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9302][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9382][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9462][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9542][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9622][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9702][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9782][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9862][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9942][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10022][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10102][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 10183][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10263][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10343][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10423][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 10504][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10583][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10663][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10743][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10823][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject b
+[screen] HOME -> MathsGame
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[ 11986][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[ 13376][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[ 15445][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject B
+[screen] MathsGame -> HOME
+[ 16211][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16289][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16367][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16445][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16523][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16601][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16679][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16757][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16835][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16913][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16991][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17069][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[screen] HOME -> HOME
+[ 17147][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17225][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17303][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17381][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17459][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17537][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17615][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17693][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17771][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17849][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17927][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18005][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18083][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 18161][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18239][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18316][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18393][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 18470][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18548][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18625][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18702][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18779][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 18856][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18933][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19010][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19087][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19164][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject b
+[screen] HOME -> DinosaurGame
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject B
+[screen] DinosaurGame -> HOME
+[ 24339][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 24417][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 24495][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 24573][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 24651][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 24729][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 24807][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 24885][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 24963][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25041][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25119][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25197][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[screen] HOME -> HOME
+[ 25275][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25353][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25431][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25509][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25587][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25665][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25743][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25821][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25899][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25977][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26055][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26133][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26211][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 26289][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26367][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26444][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26521][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 26598][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26676][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26753][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26830][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26907][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 26984][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27061][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27138][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27215][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27292][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 27369][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27446][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27523][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27600][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject b
+[screen] HOME -> SharkSwimGame
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject B
+[screen] SharkSwimGame -> HOME
+[ 32784][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 32862][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 32940][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 33018][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 33096][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 33174][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 33252][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 33330][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 33408][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 33486][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 33564][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 33642][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[screen] HOME -> HOME
+[ 33720][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 33798][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 33876][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 33954][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 34032][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 34110][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 34188][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 34266][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 34344][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 34422][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 34500][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 34578][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 34656][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 34734][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 34812][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 34889][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 34966][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 35043][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 35121][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 35198][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 35275][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 35352][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 35429][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 35506][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 35583][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 35660][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 35737][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 35814][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 35891][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 35968][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 36045][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 36122][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 36199][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 36276][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 36353][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 36430][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject b
+[screen] HOME -> RollerCoasterGame
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject B
+[screen] RollerCoasterGame -> HOME
+[ 41592][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 41670][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 41748][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 41826][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 41904][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 41982][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 42060][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 42138][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 42216][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 42294][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 42372][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 42450][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[screen] HOME -> HOME
+[ 42528][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 42606][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 42684][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 42762][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 42840][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 42918][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 42996][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 43074][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 43152][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 43230][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 43308][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 43386][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 43464][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 43542][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 43620][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 43697][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 43774][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 43851][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 43929][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 44006][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 44083][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 44160][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 44237][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 44314][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 44391][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 44468][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 44545][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 44622][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 44699][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 44776][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 44853][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 44930][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 45007][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 45084][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 45161][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 45238][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 45315][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 45392][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 45469][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 45546][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject b
+[screen] HOME -> BubblePopGame
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject B
+[screen] BubblePopGame -> HOME
+[ 50704][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 50782][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 50860][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 50938][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 51016][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 51094][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 51172][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 51250][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 51328][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 51406][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 51484][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 51562][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[screen] HOME -> HOME
+[ 51640][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 51718][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 51796][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 51874][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 51952][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 52030][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 52108][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 52186][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 52264][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 52342][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 52420][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 52498][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 52576][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 52654][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 52732][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 52809][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 52886][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 52963][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 53041][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 53118][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 53195][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 53272][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 53349][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 53426][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 53503][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 53580][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 53657][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 53734][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 53811][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 53888][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 53965][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 54042][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 54119][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 54196][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 54273][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 54350][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 54427][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 54504][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 54581][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 54658][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 54735][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 54812][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 54889][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 54966][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 55043][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject b
+[screen] HOME -> ColourMatchGame
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject B
+[screen] ColourMatchGame -> HOME
+[ 60201][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 60279][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 60357][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 60435][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 60513][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 60591][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 60669][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 60747][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 60825][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 60903][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 60981][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 61059][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[screen] HOME -> HOME
+[ 61137][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 61215][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 61293][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 61371][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 61449][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 61527][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 61605][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 61683][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 61761][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 61839][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 61917][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 61995][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 62073][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 62151][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 62229][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 62306][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 62383][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 62460][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 62538][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 62615][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 62692][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 62769][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 62846][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[ 63017][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 63097][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 63177][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 63256][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 63335][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 63414][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 63493][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 63573][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 63652][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 63731][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 63810][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 63890][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 63969][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 64048][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 64127][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 64206][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 64286][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 64365][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 64444][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 64523][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 64603][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 64682][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 64761][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 64840][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 64919][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject b
+[screen] HOME -> PrincessDanceGame
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject B
+[screen] PrincessDanceGame -> HOME
+[ 70115][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 70196][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 70276][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 70356][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 70436][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 70516][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 70596][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 70676][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 70756][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 70836][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 70916][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[screen] HOME -> HOME
+[ 70997][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 71077][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 71157][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 71237][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] state
+[dbg] player=HUGO coins=20 needs=80/80/80 level=2 day=1 owned=2 eq=60/65535/65535/65535/110 jb=0 dad=0
+[ 71318][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 71400][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 71480][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 71560][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 71640][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] daily reset
+[clock] daily reset
+[ 71721][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 71801][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 71881][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 71961][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] state
+[dbg] player=HUGO coins=20 needs=65/65/65 level=2 day=2 owned=2 eq=60/65535/65535/65535/110 jb=0 dad=0
+[ 72042][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 72124][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 72204][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 72284][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[ 72736][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject b
+[screen] MAIN MENU -> Tasks
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] Tasks -> TaskDetail
+[dbg] inject h
+[ 74919][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] TaskDetail -> TaskComplete
+[screen] TaskComplete -> Tasks
+[save] loaded
+[power] cpu 160MHz
+[boot] Pocket Buddy ready
+[dbg] volume 0
+[  1833][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] BOOT -> PLAYER SELECT
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[  3129][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3208][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3285][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3363][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3442][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[screen] HOME -> HOME
+[  3520][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3598][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3676][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3754][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3832][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3910][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3988][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4066][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4144][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[  4318][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject b
+[screen] MAIN MENU -> BUDDY
+[  4718][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4795][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4872][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4949][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5026][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5103][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5180][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5257][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5334][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[screen] BUDDY -> HOME
+[  5411][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5492][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5573][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5654][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5735][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5816][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5897][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5978][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  6059][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  6140][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> Tasks
+[screen] Tasks -> HOME
+[  7519][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7600][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7681][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7762][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7843][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7924][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8005][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8086][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8167][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8248][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> GamesMenu
+[screen] GamesMenu -> HOME
+[  9915][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9996][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10077][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10158][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10239][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10320][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10401][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10482][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10563][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10644][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10725][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> ShopCategory
+[screen] ShopCategory -> HOME
+[ 12684][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 12765][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 12846][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 12927][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 13008][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 13089][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 13170][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 13251][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 13332][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 13413][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> DadMission
+[screen] DadMission -> HOME
+[ 15683][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 15764][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 15845][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 15926][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16007][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16088][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16169][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16250][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16331][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16412][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> FrankieWalkIntro
+[screen] FrankieWalkIntro -> HOME
+[ 19042][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19123][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19204][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19285][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19366][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19447][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19528][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19609][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19690][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19771][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> DailyMissions
+[screen] DailyMissions -> HOME
+[ 22658][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 22739][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 22820][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 22901][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 22982][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 23063][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 23144][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 23225][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 23306][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 23387][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> CollectionCategory
+[screen] CollectionCategory -> HOME
+[ 26577][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26658][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26739][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26820][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26901][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26982][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27063][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27144][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27225][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27306][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27387][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> GetDressedTimer
+[screen] GetDressedTimer -> HOME
+[ 30886][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 30967][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31048][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31129][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31210][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31291][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31372][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31453][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31534][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31615][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31696][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> SETTINGS
+[screen] SETTINGS -> HOME
+[ 35517][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 35598][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 35679][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 35760][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 35841][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 35922][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 36003][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 36084][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 36165][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 36246][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 36327][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> PLAYER SELECT
+[dbg] inject x
+[ 40447][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] PLAYER SELECT -> PLAYER SELECT
+[dbg] inject a
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[ 41181][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 41260][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 41337][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 41415][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 41493][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 41571][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 41649][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 41727][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 41805][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] state
+[dbg] player=HUGO coins=30 needs=65/65/65 level=2 day=2 owned=2 eq=60/65535/65535/65535/110 jb=0 dad=0
+[ 41884][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[screen] HOME -> DadMission
+[ 42204][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject b
+[screen] DadMission -> DadMissionDetail
+[dbg] inject h
+[ 42628][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] DadMissionDetail -> DadMissionResult
+[dbg] state
+[dbg] player=HUGO coins=64 needs=65/65/65 level=2 day=2 owned=2 eq=60/65535/65535/65535/110 jb=0 dad=1
+[screen] DadMissionResult -> FrankieWalkIntro
+[dbg] inject b
+[screen] FrankieWalkIntro -> FrankieWalk
+[dbg] movement 10s
+[dbg] movement 10s
+[dbg] state
+[dbg] player=HUGO coins=64 needs=65/65/65 level=2 day=2 owned=2 eq=60/65535/65535/65535/110 jb=0 dad=1
+[screen] FrankieWalk -> DailyMissions
+[screen] DailyMissions -> CollectionCategory
+[dbg] inject b
+[screen] CollectionCategory -> CollectionGrid
+[dbg] inject c
+[ 62994][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject B
+[screen] CollectionGrid -> CollectionCategory
+[screen] CollectionCategory -> GamesMenu
+[dbg] inject b
+[screen] GamesMenu -> PenaltyKickGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[screen] PenaltyKickGame -> GamesMenu
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> MathsGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[ 72690][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[ 74126][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[ 75641][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] MathsGame -> GamesMenu
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> DinosaurGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[screen] DinosaurGame -> GamesMenu
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> SharkSwimGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[screen] SharkSwimGame -> GamesMenu
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> RollerCoasterGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[screen] RollerCoasterGame -> GamesMenu
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> BubblePopGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[screen] BubblePopGame -> GamesMenu
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> ColourMatchGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[screen] ColourMatchGame -> GamesMenu
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> PrincessDanceGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[123883][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[save] loaded
+[power] cpu 160MHz
+[boot] Pocket Buddy ready
+[   824][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] factory reset
+[screen] BOOT -> PLAYER SELECT
+[dbg] volume 0
+[dbg] inject c
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[  1892][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  1976][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  2061][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  2146][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  2231][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[dbg] grant 100 coins
+[  2317][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  2402][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  2487][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  2572][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[dbg] grant 100 coins
+[  2659][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  2744][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  2829][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  2914][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[dbg] grant 100 coins
+[  3001][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  3086][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  3171][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  3256][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  3341][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  3426][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  3511][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  3596][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  3681][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  3766][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  3851][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  3936][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  4021][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[  4195][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  4282][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  4369][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  4456][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  4543][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[screen] HOME -> HOME
+[  4630][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  4718][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  4805][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  4892][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  4979][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  5066][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  5153][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  5240][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  5327][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  5414][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  5501][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  5588][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> ShopCategory
+[dbg] inject b
+[screen] ShopCategory -> ShopBrowse
+[shop] browsing DEFAULT PRINCESS
+[dbg] inject c
+[shop] browsing ELSA
+[dbg] inject b
+[screen] ShopBrowse -> ShopPreview
+[dbg] inject b
+[screen] ShopPreview -> PurchaseConfirm
+[dbg] inject b
+[shop] bought ELSA
+[ 14800][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] PurchaseConfirm -> PurchaseResult
+[screen] PurchaseResult -> ShopBrowse
+[shop] browsing ELSA
+[screen] ShopBrowse -> CHARACTER SELECT
+[ 18153][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 18236][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 18319][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 18402][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[dbg] inject c
+[ 18486][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 18567][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 18649][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 18731][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 18813][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[dbg] inject b
+[ 18896][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 18979][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 19062][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 19145][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 19228][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 19312][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 19395][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 19478][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 19561][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 19644][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 19727][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 19811][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 19894][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 19976][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[ 20154][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 20239][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 20324][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 20409][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 20494][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 20579][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 20664][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 20749][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 20834][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 20919][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 21004][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[dbg] state
+[dbg] player=STELLA coins=160 needs=80/80/80 level=1 day=1 owned=3 eq=1/65535/65535/65535/49 jb=0 dad=0
+[ 21090][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[screen] CHARACTER SELECT -> HOME
+[ 21177][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 21264][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 21351][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 21438][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 21525][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 21612][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 21699][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 21786][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 21873][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 21960][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 22047][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> ShopCategory
+[dbg] inject c
+[dbg] inject b
+[screen] ShopCategory -> ShopBrowse
+[shop] browsing CROWN
+[dbg] inject c
+[shop] browsing WAND
+[dbg] inject c
+[shop] browsing TIARA
+[dbg] inject c
+[shop] browsing RUMI PLAIT
+[dbg] inject c
+[shop] browsing BUTTERFLY WINGS
+[dbg] inject b
+[screen] ShopBrowse -> ShopPreview
+[dbg] inject b
+[screen] ShopPreview -> PurchaseConfirm
+[dbg] inject b
+[shop] bought BUTTERFLY WINGS
+[ 31904][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] PurchaseConfirm -> PurchaseResult
+[screen] PurchaseResult -> ShopBrowse
+[shop] browsing BUTTERFLY WINGS
+[dbg] state
+[dbg] player=STELLA coins=120 needs=80/80/80 level=1 day=1 owned=4 eq=1/65535/16/65535/49 jb=0 dad=0
+[screen] ShopBrowse -> HOME
+[ 36782][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 36867][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 36952][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 37037][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 37122][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 37207][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 37292][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 37377][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 37462][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 37547][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 37632][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[ 37717][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> ShopCategory
+[dbg] inject c
+[dbg] inject b
+[screen] ShopCategory -> ShopBrowse
+[shop] browsing CROWN
+[dbg] inject c
+[shop] browsing WAND
+[dbg] inject c
+[shop] browsing TIARA
+[dbg] inject c
+[shop] browsing RUMI PLAIT
+[dbg] inject b
+[screen] ShopBrowse -> ShopPreview
+[dbg] inject b
+[screen] ShopPreview -> PurchaseConfirm
+[dbg] inject b
+[shop] bought RUMI PLAIT
+[ 47477][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] PurchaseConfirm -> PurchaseResult
+[screen] PurchaseResult -> ShopBrowse
+[shop] browsing RUMI PLAIT
+[screen] ShopBrowse -> ACCESSORY SELECT
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[ 52959][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] state
+[dbg] player=STELLA coins=80 needs=80/80/80 level=1 day=1 owned=5 eq=1/65535/15/65535/49 jb=0 dad=0
+[dbg] inject x
+[ 54435][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] ACCESSORY SELECT -> PLAYER SELECT
+[dbg] inject a
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[ 55141][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 55222][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 55303][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 55384][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 55465][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] grant 100 coins
+[ 55546][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 55628][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 55710][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 55792][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] grant 100 coins
+[ 55874][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 55956][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 56038][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 56120][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] grant 100 coins
+[ 56202][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 56284][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 56366][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 56448][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 56530][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 56612][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 56693][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 56774][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 56855][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 56936][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 57017][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 57098][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 57179][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 57260][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[ 57596][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 57675][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 57752][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[screen] HOME -> HOME
+[ 57831][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 57909][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 57987][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 58065][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 58143][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 58221][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 58299][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 58377][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 58455][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 58533][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 58611][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 58689][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 58767][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> ShopCategory
+[dbg] inject b
+[screen] ShopCategory -> ShopBrowse
+[shop] browsing SOCCER PLAYER
+[dbg] inject c
+[shop] browsing DINO TRAINER
+[dbg] inject c
+[shop] browsing T-REX
+[dbg] inject c
+[shop] browsing RAPTOR
+[dbg] inject c
+[shop] browsing SHARK
+[dbg] inject c
+[shop] browsing SPIDER-MAN
+[dbg] inject b
+[screen] ShopBrowse -> ShopPreview
+[ 63944][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject b
+[screen] ShopPreview -> PurchaseConfirm
+[dbg] inject b
+[shop] bought SPIDER-MAN
+[ 68289][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] PurchaseConfirm -> PurchaseResult
+[screen] PurchaseResult -> ShopBrowse
+[shop] browsing SPIDER-MAN
+[screen] ShopBrowse -> CHARACTER SELECT
+[ 71627][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 71703][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 71780][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 71857][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 71935][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 72012][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 72090][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 72168][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 72246][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject b
+[ 72325][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 72403][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 72482][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 72561][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 72640][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 72719][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 72798][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 72877][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 72956][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 73035][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 73114][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 73193][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 73272][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 73351][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[ 73528][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 73609][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 73690][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 73770][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 73850][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 73930][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 74010][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 74090][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 74170][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 74250][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 74330][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 74410][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 74490][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] state
+[dbg] player=HUGO coins=140 needs=80/80/80 level=2 day=1 owned=3 eq=65/65535/65535/65535/110 jb=0 dad=0
+[ 74570][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[screen] CHARACTER SELECT -> HOME
+[ 74653][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 74735][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 74817][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 74899][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 74981][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 75063][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 75144][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 75226][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 75308][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 75390][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 75472][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 75554][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> ShopCategory
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] ShopCategory -> ShopBrowse
+[shop] browsing BAG OF JELLY BEANS
+[dbg] inject c
+[shop] browsing APPLE
+[dbg] inject c
+[shop] browsing CUPCAKE
+[dbg] inject c
+[shop] browsing ICE CREAM
+[dbg] inject c
+[shop] browsing COOKIE
+[dbg] inject c
+[shop] browsing STRAWBERRY
+[dbg] inject c
+[shop] browsing BAG OF JELLY BEANS
+[dbg] inject b
+[screen] ShopBrowse -> PurchaseConfirm
+[dbg] inject b
+[shop] bought BAG OF JELLY BEANS
+[ 83730][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] PurchaseConfirm -> PurchaseResult
+[screen] PurchaseResult -> ShopBrowse
+[shop] browsing BAG OF JELLY BEANS
+[dbg] state
+[dbg] player=HUGO coins=130 needs=80/80/80 level=2 day=1 owned=3 eq=65/65535/65535/65535/110 jb=10 dad=0
+[screen] ShopBrowse -> HOME
+[ 87505][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 87583][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 87662][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 87741][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 87820][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 87899][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 87978][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 88057][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 88136][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 88215][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 88294][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 88373][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 88452][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 88531][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 88610][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 88689][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] state
+[dbg] player=HUGO coins=130 needs=80/80/80 level=2 day=1 owned=3 eq=65/65535/65535/65535/110 jb=10 dad=0
+[ 88769][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject b
+[screen] HOME -> BUDDY
+[ 88854][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 88929][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 89004][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 89079][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject c
+[ 89155][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 89230][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 89305][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 89380][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 89455][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject b
+[ 89532][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 89608][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 89684][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 89760][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 89836][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 89912][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 89988][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 90064][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 90140][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 90216][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 90292][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 90368][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 90444][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 90520][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 90596][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[ 90770][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 90849][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 90928][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 91006][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 91084][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 91162][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 91240][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 91318][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 91396][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 91474][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 91552][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 91630][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 91708][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 91786][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 91864][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 91942][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 92020][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 92098][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 92176][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] state
+[dbg] player=HUGO coins=130 needs=80/100/70 level=2 day=1 owned=3 eq=65/65535/65535/65535/110 jb=10 dad=0
+[ 92255][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[screen] BUDDY -> GetDressedTimer
+[dbg] inject b
+[dbg] inject B
+[screen] GetDressedTimer -> HOME
+[ 96132][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 96214][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 96296][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 96378][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 96460][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 96542][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 96624][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 96706][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 96788][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 96870][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 96952][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 97034][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 97115][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 97197][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 97279][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 97361][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 97443][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 97525][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 97607][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 97689][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 97771][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 97853][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 97935][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 98017][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 98099][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 98181][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 98263][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 98345][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 98426][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 98508][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 98589][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 98671][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 98753][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 98835][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 98917][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 98999][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 99081][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 99163][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 99245][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 99327][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 99409][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 99491][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 99572][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 99654][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 99736][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 99818][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 99899][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 99981][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[100063][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[save] loaded
+[power] cpu 160MHz
+[boot] Pocket Buddy ready
+[dbg] volume 0
+[  1833][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] BOOT -> PLAYER SELECT
+[dbg] inject a
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[  3462][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3541][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3620][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3699][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3778][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3857][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3936][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4015][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4094][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] state
+[dbg] player=HUGO coins=130 needs=80/100/70 level=2 day=1 owned=3 eq=65/65535/65535/65535/110 jb=10 dad=0
+[  4174][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject x
+[  4259][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] HOME -> PLAYER SELECT
+[dbg] inject c
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[  4963][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  5050][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  5137][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  5224][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  5311][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  5398][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  5485][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[  5572][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_049.bin does not exist, no permits for creation
+[dbg] state
+[dbg] player=STELLA coins=80 needs=80/80/80 level=1 day=1 owned=5 eq=1/65535/15/65535/49 jb=0 dad=0
+[save] loaded
+[power] cpu 160MHz
+[boot] Pocket Buddy ready
+[dbg] volume 0
+[  1990][E][vfs_api.cpp:182] remove(): /save.bak does not exists or is directory
+[save] wrote
+[screen] BOOT -> PLAYER SELECT
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[  3023][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3103][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3183][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3263][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[power] short timers
+[  3343][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3423][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3503][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3583][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3663][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3743][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3823][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3903][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  3983][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4063][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[  4267][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4350][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4431][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4513][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4595][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4677][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4759][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4841][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  4923][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5005][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5087][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5169][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5251][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5333][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5415][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5497][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5579][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5661][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5743][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5825][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5907][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  5989][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  6071][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  6153][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  6235][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  6317][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  6399][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  6481][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  6563][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  6645][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  6727][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  6809][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  6891][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  6973][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7055][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7137][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7219][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7301][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7383][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7465][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7547][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7629][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7711][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7793][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7875][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  7957][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8039][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8121][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8203][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8285][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8367][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8449][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8531][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8613][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8695][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8777][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8859][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  8941][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9023][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9105][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9187][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9269][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9351][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9433][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9515][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9597][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9679][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9761][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9843][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[  9925][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10007][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10089][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10171][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10253][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10335][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10417][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10499][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10581][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10663][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10745][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10827][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10909][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 10991][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 11073][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 11155][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 11237][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 11319][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 11401][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[power] dim
+[ 11484][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[dbg] inject a
+[ 11567][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 11649][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 11731][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 11813][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 11895][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 11977][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 12059][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 12141][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 12223][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 12305][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 12387][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 12469][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 12551][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 12633][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 12715][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 12797][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 12879][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[power] short timers
+[ 12962][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 13043][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 13125][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 13207][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 13289][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 13371][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 13453][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 13535][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 13617][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 13699][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 13781][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 13863][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 13945][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 14027][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 14109][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 14191][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 14273][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 14355][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 14437][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 14519][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 14601][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 14683][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 14765][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 14847][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 14929][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 15011][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 15093][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 15175][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 15257][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 15339][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 15421][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 15503][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 15585][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 15667][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 15749][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 15831][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 15913][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 15995][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16077][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16159][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16241][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16323][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16405][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16487][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16569][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16651][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16733][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16815][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16897][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 16979][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17061][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17143][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17225][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17307][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17389][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17471][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17553][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17635][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17717][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17799][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17881][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 17963][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18045][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18127][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18209][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18291][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18373][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18455][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18537][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18619][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18701][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18783][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18865][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 18947][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19029][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19111][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19193][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19275][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19357][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19439][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19521][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19603][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19685][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19767][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19849][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 19931][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 20013][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 20095][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 20177][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 20259][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 20341][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 20423][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 20505][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 20587][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 20669][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 20751][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 20833][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[power] dim
+[ 20916][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 20998][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 21080][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 21162][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 21244][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 21326][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 21408][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 21489][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 21571][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 21653][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 21735][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 21817][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 21899][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 21981][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 22063][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 22145][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 22227][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 22309][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 22391][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 22473][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 22555][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 22637][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 22719][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 22801][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 22883][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 22965][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 23047][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 23129][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 23211][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 23293][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 23375][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 23457][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 23539][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 23621][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 23703][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 23785][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 23867][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 23949][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 24031][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 24113][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 24195][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 24277][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 24359][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 24441][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 24523][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 24605][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 24687][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 24769][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 24851][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 24933][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25015][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25097][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25179][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25261][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25343][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25425][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25507][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25589][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25671][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25753][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25835][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25917][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 25999][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26081][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26163][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26245][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26327][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26409][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26491][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26573][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26655][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26737][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26819][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26901][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 26983][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27065][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27147][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27229][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27311][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27393][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27475][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27557][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27639][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27721][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27803][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27885][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 27967][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 28049][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 28131][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 28213][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 28295][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 28377][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 28459][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 28541][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 28623][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 28705][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 28787][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 28869][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 28951][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 29033][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 29115][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 29197][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 29279][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 29361][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 29443][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 29525][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 29607][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 29689][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 29771][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 29853][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 29935][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 30017][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 30099][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 30181][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 30263][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 30345][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 30427][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 30509][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 30591][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 30673][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 30755][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 30837][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 30919][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31001][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31083][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31165][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31247][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31329][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31411][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31493][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31575][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31657][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31739][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31821][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31903][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 31985][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 32067][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 32149][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 32231][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 32313][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 32395][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 32477][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 32559][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 32641][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 32723][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 32805][E][vfs_api.cpp:105] open(): /littlefs/rooms/room_110.bin does not exist, no permits for creation
+[ 32887][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[power] off
+[save] loaded
+[power] cpu 160MHz
+[boot] Pocket Buddy ready
+[dbg] volume 0

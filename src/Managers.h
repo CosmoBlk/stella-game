@@ -43,6 +43,14 @@ namespace Audio {
   void applyVolume(uint8_t volumeSetting);  // 0 off, 1 quiet, 2 normal
 }
 
+// ---------------- Power ----------------
+namespace Power {
+  void init();
+  void update(uint32_t deltaMs);
+  void noteActivity();
+  void debugShortTimers();
+}
+
 // ---------------- Save ----------------
 namespace Save {
   void init();                   // mount FS, load or create defaults

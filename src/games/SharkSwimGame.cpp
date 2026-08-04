@@ -67,7 +67,7 @@ public:
     if (tilt < -0.85f) tilt = -0.85f;
     if (tilt > 0.85f) tilt = 0.85f;
     const float targetY = 124.0f + tilt * 112.0f;
-    sharkY_ += (targetY - sharkY_) * 0.13f;
+    sharkY_ += (targetY - sharkY_) * 0.137f;
     if (sharkY_ < 58.0f) sharkY_ = 58.0f;
     if (sharkY_ > 205.0f) sharkY_ = 205.0f;
 

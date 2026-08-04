@@ -96,11 +96,16 @@ def script_smoke(h: Harness):
     h.step("s", r"player=HUGO", 3, "Hugo profile active")
     h.step("B", r"->\s*MAIN[ _]?MENU", 5, "long-B opens MainMenu")
     h.step("B", r"->\s*HOME", 5, "long-B backs out to Home")
-    h.step("a", r"->\s*TASKS", 5, "A opens Tasks")
+    h.step("b", r"->\s*BUDDY", 5, "HOME card opens Buddy")
     h.step("B", r"->\s*HOME", 5, "back to Home")
-    h.step("c", r"->\s*GAMES", 5, "C opens GamesMenu")
+    h.step("ab", r"GET ?DRESSED", 5, "1 left = Get Dressed timer")
     h.step("B", r"->\s*HOME", 5, "back to Home")
-    h.step("b", r"->\s*BUDDY", 5, "B opens Buddy")
+    h.step("aab", r"FRANKIE", 5, "2 left = Walk Frankie")
+    h.step("B", r"->\s*HOME", 6, "back to Home")
+    h.step("cb", r"->\s*PenaltyKick", 5, "1 right = first game (Hugo)")
+    h.step("B", r"->\s*HOME", 6, "game backs out to Home")
+    h.step("aaaaaab", r"->\s*MAIN ?MENU", 8, "6 left = MENU card")
+    h.step("B", r"->\s*HOME", 5, "back home")
     h.step("x", PSEL, 5, "A+C returns to PlayerSelect")
     h.step("c", "", 0, "highlight Stella")
     h.step("b", r"->\s*HOME", 5, "Stella -> Home")
@@ -116,14 +121,15 @@ def script_deep(h: Harness):
     h.step("", PSEL, 8, "PlayerSelect")
     h.step("b", r"->\s*HOME", 5, "Hugo -> Home")
     # --- task completion ---
-    h.step("a", r"->\s*TASKS", 5, "open Tasks")
-    h.step("b", r"->\s*TASK", 5, "open first task detail")
+    h.step("aaaa", "", 0, "4 left = BRUSH TEETH card")
+    h.step("b", r"->\s*TASK ?DETAIL", 5, "open task detail")
     h.step("h", r"->\s*TASK ?COMPLETE", 6, "hold-B claims task")
     h.drain(3.5)  # celebration auto-return
     h.step("s", r"coins=30", 3, "task coins awarded (20+10)")
     # --- shop purchase: jelly bean bag ---
-    h.step("B", r"->\s*(HOME|TASKS)", 5, "back toward Home")
-    h.drain(0.5)
+    h.drain(1.0)
+    h.step("H", "", 0, "jump home")
+    h.drain(0.6)
     h.step("B", r"->\s*MAIN ?MENU", 6, "open MainMenu")
     h.step("ccc", "", 0, "highlight SHOP")
     h.step("b", r"->\s*SHOP", 5, "enter Shop categories")
@@ -169,24 +175,67 @@ def _mash_game(h: Harness, label):
 
 
 def script_games(h: Harness):
-    """Mash-test every Phase 1 game + daily reset cycle."""
+    """Launch all 8 games from the home carousel + daily reset cycle."""
     h.reset_device()
     h.step("", r"\[boot\] Pocket Buddy ready", 15, "boots")
     h.mute()
     h.step("r", r"factory reset", 5, "fresh save")
     h.step("", PSEL, 8, "PlayerSelect")
     h.step("b", r"->\s*HOME", 5, "Hugo -> Home")
-    h.step("c", r"->\s*GAMES", 5, "open GamesMenu")
-    for i in range(4):
-        _mash_game(h, f"game{i}")
-        h.step("c", "", 0, "next game")
-    # --- daily reset cycle ---
-    h.step("B", r"->\s*HOME", 6, "back to Home")
+    entered = set()
+    for i in range(8):
+        h.step("H", "", 0, "")
+        h.drain(0.6)
+        for _ in range(i + 1):
+            h.ser.write(b"c")
+            time.sleep(0.35)
+        h.ser.write(b"b")
+        name = None
+        deadline = time.time() + 5
+        while time.time() < deadline:
+            line = h._readline()
+            m = re.search(r"->\s*(\w+Game)", line or "")
+            if m:
+                name = m.group(1)
+                break
+        if name:
+            entered.add(name)
+            for _ in range(3):
+                for ch in "abc":
+                    h.ser.write(ch.encode())
+                    time.sleep(0.3)
+                h.drain(0.4)
+            crashed = False
+            deadline = time.time() + 1.0
+            while time.time() < deadline:
+                if "Pocket Buddy ready" in (h._readline() or ""):
+                    crashed = True
+            if crashed:
+                print(f"  FAIL  {name} crash-reboot")
+                h.failed.append(f"{name} crashed")
+            else:
+                print(f"  PASS  carousel slot {i + 1}: {name} mash-survived")
+                h.passed.append(f"{name} ok")
+            h.step("B", r"->\s*HOME", 8, f"{name} exits to Home")
+        else:
+            print(f"  FAIL  carousel game slot {i + 1} did not open")
+            h.failed.append(f"carousel slot {i + 1}")
+        h.drain(0.5)
+    print(f"  INFO  distinct games: {sorted(entered)}")
+    if len(entered) == 8:
+        h.passed.append("all 8 games from carousel")
+    else:
+        h.failed.append(f"only {len(entered)}/8 games: {sorted(entered)}")
+    # --- daily reset cycle (tasks via main menu) ---
+    h.step("H", "", 0, "home")
     h.step("s", "coins=", 3, "pre-reset state")
     h.step("d", r"daily reset", 3, "force daily reset")
     h.step("s", r"day=2", 3, "day advanced")
-    h.step("a", r"->\s*TASKS", 5, "tasks after reset")
-    h.step("b", r"->\s*TASK", 5, "open task detail")
+    h.step("B", r"->\s*MAIN ?MENU", 6, "menu")
+    h.step("c", "", 0, "to TASKS")
+    h.step("b", r"->\s*TASKS", 5, "tasks via menu")
+    h.step("ccc", "", 0, "to BRUSH TEETH (4th active task)")
+    h.step("b", r"->\s*TASK ?DETAIL", 5, "open task detail")
     h.step("h", r"->\s*TASK ?COMPLETE", 6, "task claimable again after reset")
     h.drain(3.5)
 
@@ -531,8 +580,28 @@ def script_final(h: Harness):
         h.failed.append("stella persistence")
 
 
+def script_battery(h: Harness):
+    """Idle dim -> activity restore -> auto power-off (short timers) -> reset recovery."""
+    h.reset_device()
+    h.step("", r"\[power\] cpu 160MHz", 15, "CPU clocked to 160MHz at boot")
+    h.step("", r"\[boot\] Pocket Buddy ready", 10, "boots")
+    h.mute()
+    h.step("", PSEL, 8, "PlayerSelect")
+    h.step("b", r"->\s*HOME", 5, "Home")
+    h.step("z", r"\[power\] short timers", 3, "short power timers armed")
+    h.step("", r"\[power\] dim", 15, "idle dim fires")
+    h.step("a", "", 0, "activity")
+    h.drain(1.0)
+    h.step("z", r"\[power\] short timers", 3, "re-arm")
+    h.step("", r"\[power\] off", 30, "auto power-off fires")
+    h.drain(2.0)
+    h.reset_device()
+    h.step("", r"\[boot\] Pocket Buddy ready", 15, "recovers on reset after deep sleep")
+    h.mute()
+
+
 SCRIPTS = {"smoke": script_smoke, "deep": script_deep, "games": script_games,
-           "phase2": script_phase2, "final": script_final}
+           "phase2": script_phase2, "final": script_final, "battery": script_battery}
 
 
 def main():
