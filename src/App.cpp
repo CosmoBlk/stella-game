@@ -179,7 +179,10 @@ void App::raiseEvent(GameEvent event, uint8_t param, uint8_t count) {
     case GameEvent::DadMissionDone: active.totalDadMissionsCompleted += count; break;
     case GameEvent::FrankieWalked:
       active.totalFrankieWalks += count;
-      if (!active.daily.completedTasks[9]) active.daily.completedTasks[9] = true;
+      if (!active.daily.completedTasks[9]) {
+        active.daily.completedTasks[9] = true;
+        raiseEvent(GameEvent::TaskCompleted);  // safe one-level recursion
+      }
       break;
     case GameEvent::GamePlayed: active.totalGamesPlayed += count; break;
     case GameEvent::MathsCorrect: active.maths.correctAnswers += count; break;

@@ -56,6 +56,7 @@ public:
     updateReveal(deltaMs);
     if (state_ == SwimState::Intro || state_ == SwimState::Result || state_ == SwimState::Paused) return;
 
+    Power::noteActivity();  // tilt gameplay must never idle-dim or sleep
     elapsedMs_ += deltaMs;
     scroll_ += deltaMs * 0.08f;
     if (invulnerableMs_ > 0) invulnerableMs_ = deltaMs >= invulnerableMs_ ? 0 : invulnerableMs_ - deltaMs;
@@ -136,7 +137,7 @@ public:
 
   void onButtonC() override {
     if (state_ == SwimState::Intro) cycleShark();
-    else if (state_ == SwimState::Result) App::goTo(ScreenId::GamesMenu);
+    else if (state_ == SwimState::Result) App::goBack();
   }
 
   const char* name() const override { return "SharkSwimGame"; }

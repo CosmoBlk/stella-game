@@ -19,7 +19,7 @@ public:
     UI::drawBigCentred("HUGO + STELLA", 18, 2, UI::theme().text);
     UI::drawBigCentred("WHO'S PLAYING?", 42, 1, UI::theme().accent);
     drawCard(8, PlayerId::Hugo, "HUGO", 0x249F, 0xFD20);
-    drawCard(164, PlayerId::Stella, "STELLA", 0xF81F, 0xFEC0);
+    drawCard(164, PlayerId::Stella, "STELLA", 0xF356, 0xFEC0);  // hot pink, NOT the 0xF81F transparency key
     canvas.setTextDatum(middle_center);
     canvas.setTextColor(UI::theme().text);
     canvas.setTextSize(1);

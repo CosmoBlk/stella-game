@@ -7226,3 +7226,930 @@
 [save] wrote
 [screen] TaskDetail -> TaskComplete
 [screen] TaskComplete -> Tasks
+[save] loaded
+[power] cpu 160MHz
+[boot] Pocket Buddy ready
+[dbg] volume 0
+[  1163][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] factory reset
+[screen] BOOT -> PLAYER SELECT
+[bg] loaded /ui/select.bin
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[bg] loaded /rooms/room_110.bin
+[screen] HOME -> HOME
+[  2912][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject c
+[dbg] inject b
+[screen] HOME -> PenaltyKickGame
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject B
+[screen] PenaltyKickGame -> HOME
+[screen] HOME -> HOME
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] HOME -> MathsGame
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[ 18026][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject B
+[screen] MathsGame -> HOME
+[screen] HOME -> HOME
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] HOME -> DinosaurGame
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject B
+[screen] DinosaurGame -> HOME
+[screen] HOME -> HOME
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] HOME -> SharkSwimGame
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject B
+[screen] SharkSwimGame -> HOME
+[screen] HOME -> HOME
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] HOME -> RollerCoasterGame
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject B
+[screen] RollerCoasterGame -> HOME
+[screen] HOME -> HOME
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] HOME -> BubblePopGame
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject B
+[screen] BubblePopGame -> HOME
+[screen] HOME -> HOME
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[ 63281][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] HOME -> ColourMatchGame
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject B
+[screen] ColourMatchGame -> HOME
+[screen] HOME -> HOME
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] HOME -> PrincessDanceGame
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject B
+[screen] PrincessDanceGame -> HOME
+[screen] HOME -> HOME
+[dbg] state
+[dbg] player=HUGO coins=20 needs=80/80/80 level=2 day=1 owned=2 eq=60/65535/65535/65535/110 jb=0 dad=0
+[dbg] daily reset
+[clock] daily reset
+[dbg] state
+[dbg] player=HUGO coins=20 needs=65/65/65 level=2 day=2 owned=2 eq=60/65535/65535/65535/110 jb=0 dad=0
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[bg] loaded /ui/menu.bin
+[dbg] inject c
+[ 85327][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject b
+[screen] MAIN MENU -> Tasks
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] Tasks -> TaskDetail
+[dbg] inject h
+[ 87461][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] TaskDetail -> TaskComplete
+[screen] TaskComplete -> Tasks
+[save] loaded
+[power] cpu 160MHz
+[boot] Pocket Buddy ready
+[dbg] volume 0
+[  1835][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] BOOT -> PLAYER SELECT
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[bg] loaded /rooms/room_110.bin
+[screen] HOME -> HOME
+[  4359][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[bg] loaded /ui/menu.bin
+[dbg] inject b
+[screen] MAIN MENU -> BUDDY
+[bg] loaded /rooms/room_110.bin
+[screen] BUDDY -> HOME
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[bg] loaded /ui/menu.bin
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> Tasks
+[screen] Tasks -> HOME
+[bg] loaded /rooms/room_110.bin
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[bg] loaded /ui/menu.bin
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> GamesMenu
+[screen] GamesMenu -> HOME
+[bg] loaded /rooms/room_110.bin
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[bg] loaded /ui/menu.bin
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> ShopCategory
+[screen] ShopCategory -> HOME
+[bg] loaded /rooms/room_110.bin
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[bg] loaded /ui/menu.bin
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> DadMission
+[screen] DadMission -> HOME
+[bg] loaded /rooms/room_110.bin
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[bg] loaded /ui/menu.bin
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> FrankieWalkIntro
+[screen] FrankieWalkIntro -> HOME
+[bg] loaded /rooms/room_110.bin
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[bg] loaded /ui/menu.bin
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> DailyMissions
+[screen] DailyMissions -> HOME
+[bg] loaded /rooms/room_110.bin
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[bg] loaded /ui/menu.bin
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> CollectionCategory
+[screen] CollectionCategory -> HOME
+[bg] loaded /rooms/room_110.bin
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[bg] loaded /ui/menu.bin
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> GetDressedTimer
+[screen] GetDressedTimer -> HOME
+[bg] loaded /rooms/room_110.bin
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[bg] loaded /ui/menu.bin
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> SETTINGS
+[screen] SETTINGS -> HOME
+[bg] loaded /rooms/room_110.bin
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[bg] loaded /ui/menu.bin
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> PLAYER SELECT
+[bg] loaded /ui/select.bin
+[dbg] inject x
+[ 41032][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] PLAYER SELECT -> PLAYER SELECT
+[dbg] inject a
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[bg] loaded /rooms/room_110.bin
+[dbg] state
+[dbg] player=HUGO coins=30 needs=65/65/65 level=2 day=2 owned=2 eq=60/65535/65535/65535/110 jb=0 dad=0
+[screen] HOME -> DadMission
+[ 42968][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject b
+[screen] DadMission -> DadMissionDetail
+[dbg] inject h
+[ 43489][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] DadMissionDetail -> DadMissionResult
+[dbg] state
+[dbg] player=HUGO coins=59 needs=65/65/65 level=2 day=2 owned=2 eq=60/65535/65535/65535/110 jb=0 dad=1
+[screen] DadMissionResult -> FrankieWalkIntro
+[dbg] inject b
+[screen] FrankieWalkIntro -> FrankieWalk
+[dbg] movement 10s
+[dbg] movement 10s
+[dbg] state
+[dbg] player=HUGO coins=59 needs=65/65/65 level=2 day=2 owned=2 eq=60/65535/65535/65535/110 jb=0 dad=1
+[screen] FrankieWalk -> DailyMissions
+[screen] DailyMissions -> CollectionCategory
+[dbg] inject b
+[screen] CollectionCategory -> CollectionGrid
+[dbg] inject c
+[dbg] inject B
+[screen] CollectionGrid -> CollectionCategory
+[screen] CollectionCategory -> GamesMenu
+[dbg] inject b
+[screen] GamesMenu -> PenaltyKickGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[ 66353][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[screen] PenaltyKickGame -> GamesMenu
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> MathsGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[ 77016][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] MathsGame -> GamesMenu
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> DinosaurGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[screen] DinosaurGame -> GamesMenu
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> SharkSwimGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[screen] SharkSwimGame -> GamesMenu
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> RollerCoasterGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[screen] RollerCoasterGame -> GamesMenu
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> BubblePopGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[screen] BubblePopGame -> GamesMenu
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> ColourMatchGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[screen] ColourMatchGame -> GamesMenu
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] GamesMenu -> PrincessDanceGame
+[dbg] movement 10s
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[dbg] inject a
+[dbg] inject b
+[dbg] inject c
+[save] loaded
+[power] cpu 160MHz
+[boot] Pocket Buddy ready
+[dbg] volume 0
+[  1835][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] BOOT -> PLAYER SELECT
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[bg] loaded /rooms/room_110.bin
+[power] short timers
+[  4361][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[power] dim
+[dbg] inject a
+[power] short timers
+[power] dim
+[ 33251][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[power] off
+[save] loaded
+[power] cpu 160MHz
+[boot] Pocket Buddy ready
+[dbg] volume 0
+[save] loaded
+[power] cpu 160MHz
+[boot] Pocket Buddy ready
+[   816][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] factory reset
+[screen] BOOT -> PLAYER SELECT
+[bg] loaded /ui/select.bin
+[dbg] volume 0
+[dbg] inject c
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[bg] loaded /rooms/room_049.bin
+[dbg] grant 100 coins
+[dbg] grant 100 coins
+[dbg] grant 100 coins
+[  3996][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] HOME -> HOME
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[bg] loaded /ui/menu.bin
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> ShopCategory
+[dbg] inject b
+[screen] ShopCategory -> ShopBrowse
+[shop] browsing DEFAULT PRINCESS
+[dbg] inject c
+[shop] browsing ELSA
+[dbg] inject b
+[screen] ShopBrowse -> ShopPreview
+[dbg] inject b
+[screen] ShopPreview -> PurchaseConfirm
+[dbg] inject b
+[shop] bought ELSA
+[ 14657][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] PurchaseConfirm -> PurchaseResult
+[screen] PurchaseResult -> ShopBrowse
+[shop] browsing ELSA
+[screen] ShopBrowse -> CHARACTER SELECT
+[bg] loaded /rooms/room_049.bin
+[dbg] inject c
+[dbg] inject b
+[ 19811][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] state
+[dbg] player=STELLA coins=160 needs=80/80/80 level=1 day=1 owned=3 eq=1/65535/65535/65535/49 jb=0 dad=0
+[screen] CHARACTER SELECT -> HOME
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[bg] loaded /ui/menu.bin
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> ShopCategory
+[dbg] inject c
+[dbg] inject b
+[screen] ShopCategory -> ShopBrowse
+[shop] browsing CROWN
+[dbg] inject c
+[shop] browsing WAND
+[dbg] inject c
+[shop] browsing TIARA
+[dbg] inject c
+[shop] browsing RUMI PLAIT
+[dbg] inject c
+[shop] browsing BUTTERFLY WINGS
+[dbg] inject b
+[screen] ShopBrowse -> ShopPreview
+[dbg] inject b
+[screen] ShopPreview -> PurchaseConfirm
+[dbg] inject b
+[shop] bought BUTTERFLY WINGS
+[ 32182][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] PurchaseConfirm -> PurchaseResult
+[screen] PurchaseResult -> ShopBrowse
+[shop] browsing BUTTERFLY WINGS
+[dbg] state
+[dbg] player=STELLA coins=120 needs=80/80/80 level=1 day=1 owned=4 eq=1/65535/16/65535/49 jb=0 dad=0
+[screen] ShopBrowse -> HOME
+[bg] loaded /rooms/room_049.bin
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[bg] loaded /ui/menu.bin
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> ShopCategory
+[dbg] inject c
+[dbg] inject b
+[screen] ShopCategory -> ShopBrowse
+[shop] browsing CROWN
+[dbg] inject c
+[shop] browsing WAND
+[dbg] inject c
+[shop] browsing TIARA
+[dbg] inject c
+[shop] browsing RUMI PLAIT
+[dbg] inject b
+[screen] ShopBrowse -> ShopPreview
+[dbg] inject b
+[screen] ShopPreview -> PurchaseConfirm
+[dbg] inject b
+[shop] bought RUMI PLAIT
+[ 47731][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] PurchaseConfirm -> PurchaseResult
+[screen] PurchaseResult -> ShopBrowse
+[shop] browsing RUMI PLAIT
+[screen] ShopBrowse -> ACCESSORY SELECT
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[ 53124][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] state
+[dbg] player=STELLA coins=80 needs=80/80/80 level=1 day=1 owned=5 eq=1/65535/15/65535/49 jb=0 dad=0
+[dbg] inject x
+[ 54658][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] ACCESSORY SELECT -> PLAYER SELECT
+[bg] loaded /ui/select.bin
+[dbg] inject a
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[bg] loaded /rooms/room_110.bin
+[dbg] grant 100 coins
+[dbg] grant 100 coins
+[dbg] grant 100 coins
+[ 57701][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] HOME -> HOME
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[bg] loaded /ui/menu.bin
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> ShopCategory
+[dbg] inject b
+[screen] ShopCategory -> ShopBrowse
+[shop] browsing SOCCER PLAYER
+[dbg] inject c
+[shop] browsing DINO TRAINER
+[dbg] inject c
+[shop] browsing T-REX
+[dbg] inject c
+[shop] browsing RAPTOR
+[dbg] inject c
+[shop] browsing SHARK
+[dbg] inject c
+[shop] browsing SPIDER-MAN
+[dbg] inject b
+[screen] ShopBrowse -> ShopPreview
+[ 65553][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject b
+[screen] ShopPreview -> PurchaseConfirm
+[dbg] inject b
+[shop] bought SPIDER-MAN
+[ 68878][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] PurchaseConfirm -> PurchaseResult
+[screen] PurchaseResult -> ShopBrowse
+[shop] browsing SPIDER-MAN
+[screen] ShopBrowse -> CHARACTER SELECT
+[bg] loaded /rooms/room_110.bin
+[dbg] inject c
+[dbg] inject b
+[ 74043][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] state
+[dbg] player=HUGO coins=140 needs=80/80/80 level=2 day=1 owned=3 eq=65/65535/65535/65535/110 jb=0 dad=0
+[screen] CHARACTER SELECT -> HOME
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[bg] loaded /ui/menu.bin
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> ShopCategory
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] ShopCategory -> ShopBrowse
+[shop] browsing BAG OF JELLY BEANS
+[dbg] inject c
+[shop] browsing APPLE
+[dbg] inject c
+[shop] browsing CUPCAKE
+[dbg] inject c
+[shop] browsing ICE CREAM
+[dbg] inject c
+[shop] browsing COOKIE
+[dbg] inject c
+[shop] browsing STRAWBERRY
+[dbg] inject c
+[shop] browsing BAG OF JELLY BEANS
+[dbg] inject b
+[screen] ShopBrowse -> PurchaseConfirm
+[dbg] inject b
+[shop] bought BAG OF JELLY BEANS
+[ 84692][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] PurchaseConfirm -> PurchaseResult
+[screen] PurchaseResult -> ShopBrowse
+[shop] browsing BAG OF JELLY BEANS
+[dbg] state
+[dbg] player=HUGO coins=130 needs=80/80/80 level=2 day=1 owned=3 eq=65/65535/65535/65535/110 jb=10 dad=0
+[screen] ShopBrowse -> HOME
+[bg] loaded /rooms/room_110.bin
+[dbg] state
+[dbg] player=HUGO coins=130 needs=80/80/80 level=2 day=1 owned=3 eq=65/65535/65535/65535/110 jb=10 dad=0
+[dbg] inject b
+[screen] HOME -> BUDDY
+[dbg] inject c
+[dbg] inject b
+[ 91722][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] state
+[dbg] player=HUGO coins=130 needs=80/100/70 level=2 day=1 owned=3 eq=65/65535/65535/65535/110 jb=10 dad=0
+[screen] BUDDY -> GetDressedTimer
+[dbg] inject b
+[dbg] inject B
+[screen] GetDressedTimer -> HOME
+[save] loaded
+[power] cpu 160MHz
+[boot] Pocket Buddy ready
+[dbg] volume 0
+[  1827][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] BOOT -> PLAYER SELECT
+[dbg] inject a
+[bg] loaded /ui/select.bin
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[bg] loaded /rooms/room_110.bin
+[dbg] state
+[dbg] player=HUGO coins=130 needs=80/100/70 level=2 day=1 owned=3 eq=65/65535/65535/65535/110 jb=10 dad=0
+[dbg] inject x
+[  4179][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] HOME -> PLAYER SELECT
+[bg] loaded /ui/select.bin
+[dbg] inject c
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[bg] loaded /rooms/room_049.bin
+[dbg] state
+[dbg] player=STELLA coins=80 needs=80/80/80 level=1 day=1 owned=5 eq=1/65535/15/65535/49 jb=0 dad=0
+[save] loaded
+[power] cpu 160MHz
+[boot] Pocket Buddy ready
+[dbg] volume 0
+[  1163][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] factory reset
+[screen] BOOT -> PLAYER SELECT
+[bg] loaded /ui/select.bin
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[bg] loaded /rooms/room_110.bin
+[dbg] state
+[dbg] player=HUGO coins=20 needs=80/80/80 level=2 day=1 owned=2 eq=60/65535/65535/65535/110 jb=0 dad=0
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[bg] loaded /ui/menu.bin
+[dbg] inject B
+[screen] MAIN MENU -> HOME
+[bg] loaded /rooms/room_110.bin
+[  3022][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject b
+[screen] HOME -> BUDDY
+[dbg] inject B
+[screen] BUDDY -> HOME
+[dbg] inject a
+[dbg] inject b
+[screen] HOME -> GetDressedTimer
+[dbg] inject B
+[screen] GetDressedTimer -> HOME
+[dbg] inject a
+[dbg] inject a
+[dbg] inject b
+[screen] HOME -> FrankieWalkIntro
+[dbg] inject B
+[screen] FrankieWalkIntro -> HOME
+[dbg] inject c
+[dbg] inject b
+[screen] HOME -> PenaltyKickGame
+[dbg] inject B
+[screen] PenaltyKickGame -> HOME
+[dbg] inject a
+[dbg] inject a
+[dbg] inject a
+[dbg] inject a
+[dbg] inject a
+[dbg] inject a
+[dbg] inject b
+[screen] HOME -> MAIN MENU
+[bg] loaded /ui/menu.bin
+[dbg] inject B
+[screen] MAIN MENU -> HOME
+[bg] loaded /rooms/room_110.bin
+[dbg] inject x
+[ 10361][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] HOME -> PLAYER SELECT
+[bg] loaded /ui/select.bin
+[dbg] inject c
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[bg] loaded /rooms/room_049.bin
+[dbg] state
+[dbg] player=STELLA coins=20 needs=80/80/80 level=1 day=1 owned=2 eq=0/65535/65535/65535/49 jb=0 dad=0
+[save] loaded
+[power] cpu 160MHz
+[boot] Pocket Buddy ready
+[dbg] volume 0
+[  1164][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] factory reset
+[screen] BOOT -> PLAYER SELECT
+[bg] loaded /ui/select.bin
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[bg] loaded /rooms/room_110.bin
+[dbg] inject a
+[dbg] inject a
+[dbg] inject a
+[  2918][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[dbg] inject a
+[dbg] inject b
+[screen] HOME -> TaskDetail
+[dbg] inject h
+[  3873][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] TaskDetail -> TaskComplete
+[screen] TaskComplete -> Tasks
+[dbg] state
+[dbg] player=HUGO coins=30 needs=80/80/80 level=2 day=1 owned=2 eq=60/65535/65535/65535/110 jb=0 dad=0
+[screen] Tasks -> HOME
+[dbg] inject B
+[screen] HOME -> MAIN MENU
+[bg] loaded /ui/menu.bin
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] MAIN MENU -> ShopCategory
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject c
+[dbg] inject b
+[screen] ShopCategory -> ShopBrowse
+[shop] browsing BAG OF JELLY BEANS
+[dbg] inject b
+[screen] ShopBrowse -> PurchaseConfirm
+[dbg] inject b
+[shop] bought BAG OF JELLY BEANS
+[ 14583][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] PurchaseConfirm -> PurchaseResult
+[screen] PurchaseResult -> ShopBrowse
+[shop] browsing BAG OF JELLY BEANS
+[dbg] state
+[dbg] player=HUGO coins=20 needs=80/80/80 level=2 day=1 owned=2 eq=60/65535/65535/65535/110 jb=10 dad=0
+[dbg] grant 100 coins
+[ 19566][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[save] loaded
+[power] cpu 160MHz
+[boot] Pocket Buddy ready
+[dbg] volume 0
+[  1827][E][vfs_api.cpp:182] remove(): /save.tmp does not exists or is directory
+[save] wrote
+[screen] BOOT -> PLAYER SELECT
+[dbg] inject b
+[screen] PLAYER SELECT -> HOME
+[bg] loaded /rooms/room_110.bin
+[dbg] state
+[dbg] player=HUGO coins=120 needs=80/80/80 level=2 day=1 owned=2 eq=60/65535/65535/65535/110 jb=10 dad=0

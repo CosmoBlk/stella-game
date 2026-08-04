@@ -152,3 +152,28 @@ Working log. Newest entries at the bottom. Decisions marked **D**, findings **F*
   with procedural fallback (files land with art round 2).
 - **F** QA rewritten for carousel + new battery suite: 236 assertions across 6 suites, all
   green. WALK FRANKIE task auto-ticks on walk completion (no double coins).
+
+## Phase 3 fully integrated (01:3x-02:0x)
+- **F** Art round 2 in the build: 24 streamed backgrounds live (verified "[bg] loaded
+  /rooms/room_110.bin" on-device; LittleFS image 3.5MB uploaded via uploadfs — NOTE:
+  uploadfs wipes save.bin, acceptable), 35 icon bitmaps rendering through UI::drawIcon
+  (procedural fallback for arrows/shapes), kid tiles on player select, select/menu
+  backdrops wired. Firmware 960KB (14.6%).
+- **F** Fonts pass applied: menu labels size 1->2, selector names size 2, mission rows
+  adaptive, datum leaks fixed (audit table in scratchpad out-fonts.md).
+- **F** QA flake fixed: carousel game-launch needed a slide-settle drain before B (two
+  transient fails were script races, not product). All 6 suites green on final build.
+- **F** Review round running: codex review --base review-p3 (xhigh) + gemini with 20-min
+  watchdog kill (George's standing instruction: always watchdog gemini at 20 min).
+
+## Phase 3 review round closed (02:1x)
+- **F** Codex review: 4 findings, all fixed — P1: ordinary IMU movement now counts as
+  power activity + tilt games/Frankie walk call Power::noteActivity() per active frame
+  (walk would have deep-slept at 5min, tilt games dimmed); P2s: FrankieWalked auto-task
+  now raises TaskCompleted (safe one-level recursion), README documents uploadfs (and its
+  save-wipe), coaster/shark result screens use goBack() (was hardcoded GamesMenu).
+- **F** Gemini review (finished in 12min, no watchdog needed): 3 findings — #1 duplicate
+  of Codex P2 (already fixed), #2 REAL: Stella's select card fill was 0xF81F = the
+  transparency sentinel (neon magenta glitch) -> 0xF356 hot pink, #3 bounds guard added
+  to carousel buildRing (push lambda caps at MAX_CARDS).
+- **F** All suites green post-fixes. Final firmware 960KB, FS 3.5MB assets.

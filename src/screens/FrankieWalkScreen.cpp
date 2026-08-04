@@ -53,6 +53,7 @@ public:
   }
 
   void update(uint32_t deltaMs) override {
+    Power::noteActivity();  // a real walk must never idle-dim or deep-sleep
     elapsedMs_ += deltaMs;
     if (finishing_) return;
 

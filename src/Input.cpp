@@ -145,6 +145,7 @@ void poll() {
   }
 
   if (downA || downB || downC || comboEvent || shakeEvent ||
+      movement >= FRANKIE_MOVE_THRESHOLD ||
       buttons[0].pressedEvent || buttons[1].pressedEvent || buttons[2].pressedEvent ||
       buttons[0].longEvent || buttons[1].longEvent || buttons[2].longEvent) {
     Power::noteActivity();

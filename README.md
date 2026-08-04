@@ -9,7 +9,9 @@ licensed-character pixel art for personal family use only.
 
 ## Build & flash
 ```bash
-pio run -t upload        # device on /dev/cu.usbserial-5B090283871
+pio run -t upload        # firmware; device on /dev/cu.usbserial-5B090283871
+pio run -t uploadfs      # backgrounds (data/ -> LittleFS). Needed on a fresh
+                         # device or after art changes. WARNING: wipes the save.
 pio device monitor       # 115200 baud
 ```
 

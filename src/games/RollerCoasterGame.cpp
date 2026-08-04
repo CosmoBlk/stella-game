@@ -47,6 +47,7 @@ public:
     updateSparkles(deltaMs);
     if (state_ == CoasterState::Result) return;
     if (state_ == CoasterState::Paused) return;
+    Power::noteActivity();  // tilt gameplay must never idle-dim or sleep
 
     elapsedMs_ += deltaMs;
     scroll_ += deltaMs * 0.095f;
@@ -109,7 +110,7 @@ public:
   }
 
   void onButtonC() override {
-    if (state_ == CoasterState::Result) App::goTo(ScreenId::GamesMenu);
+    if (state_ == CoasterState::Result) App::goBack();
   }
 
   const char* name() const override { return "RollerCoasterGame"; }

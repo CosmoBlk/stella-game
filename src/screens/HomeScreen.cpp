@@ -120,26 +120,29 @@ public:
 private:
   void buildRing() {
     count_ = 0;
-    cards_[count_++] = {CardKind::Home, 0};
+    auto push = [this](CarouselCard card) {
+      if (count_ < MAX_CARDS) cards_[count_++] = card;
+    };
+    push({CardKind::Home, 0});
 
     const GameId* order = App::player() == PlayerId::Hugo ? HUGO_ORDER : STELLA_ORDER;
     for (uint8_t i = 0; i < static_cast<uint8_t>(GameId::COUNT); ++i) {
       const GameCardDef* game = gameDef(order[i]);
       if (game != nullptr && App::screen(game->screenId) != nullptr) {
-        cards_[count_++] = {CardKind::Game, static_cast<uint8_t>(game->gameId)};
+        push({CardKind::Game, static_cast<uint8_t>(game->gameId)});
       }
     }
 
-    cards_[count_++] = {CardKind::Room, 0};
-    cards_[count_++] = {CardKind::DressUp, 0};
-    cards_[count_++] = {CardKind::JellyBeans, 0};
-    cards_[count_++] = {CardKind::Sleep, 0};
-    cards_[count_++] = {CardKind::Play, 0};
-    cards_[count_++] = {CardKind::Feed, 0};
-    cards_[count_++] = {CardKind::Menu, 0};
+    push({CardKind::Room, 0});
+    push({CardKind::DressUp, 0});
+    push({CardKind::JellyBeans, 0});
+    push({CardKind::Sleep, 0});
+    push({CardKind::Play, 0});
+    push({CardKind::Feed, 0});
+    push({CardKind::Menu, 0});
 
     for (int i = ACTIVE_TASK_COUNT - 1; i >= 0; --i) {
-      cards_[count_++] = {CardKind::Task, ACTIVE_TASKS[i]};
+      push({CardKind::Task, ACTIVE_TASKS[i]});
     }
   }
 
