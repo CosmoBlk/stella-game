@@ -120,7 +120,7 @@ private:
     canvas.fillRoundRect(42, 169, 236, 27, 8, UI::theme().panel);
     canvas.setTextDatum(middle_center);
     canvas.setTextColor(UI::theme().text);
-    canvas.setTextSize(1);
+    canvas.setTextSize(2);
     canvas.drawString(eatingMs_ > 0 ? "YUM YUM!" : label, 160, 182);
     canvas.setTextDatum(top_left);
   }

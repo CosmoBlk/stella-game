@@ -301,6 +301,7 @@ private:
       UI::drawIcon(IconId::Sparkle, 36 + i * 41, 78 + (i % 2) * 65, 16,
                    i % 2 ? TFT_CYAN : TFT_YELLOW);
     }
+    canvas.setTextDatum(top_left);
   }
 
   void drawResult(M5Canvas& canvas) {

@@ -1,4 +1,5 @@
 #include "Screen.h"
+#include "../Bg.h"
 #include "../App.h"
 #include "../Content.h"
 #include "../Sprites.h"
@@ -13,7 +14,8 @@ public:
 
   void draw() override {
     M5Canvas& canvas = Gfx::c();
-    UI::drawBackground();
+    if (Bg::ensureUi("select")) Bg::draw();
+    else UI::drawBackground();
     UI::drawBigCentred("HUGO + STELLA", 18, 2, UI::theme().text);
     UI::drawBigCentred("WHO'S PLAYING?", 42, 1, UI::theme().accent);
     drawCard(8, PlayerId::Hugo, "HUGO", 0x249F, 0xFD20);
@@ -57,15 +59,8 @@ private:
     canvas.fillRoundRect(x, y, 148, 134, 16, fill);
     canvas.drawRoundRect(x, y, 148, 134, 16, active ? accent : 0xFFFF);
     if (active) canvas.drawRoundRect(x + 3, y + 3, 142, 128, 14, accent);
-    if (id == PlayerId::Hugo) {
-      // TODO(art): swap to artKid()
-      Sprites::drawCharacter(ITEM_HUGO_DEFAULT_SOCCER, x + 74, y + 65, 82,
-                             Anim::Happy, App::nowMs());
-    } else {
-      // TODO(art): swap to artKid()
-      Sprites::drawCharacter(ITEM_STELLA_DEFAULT_PRINCESS, x + 74, y + 65, 82,
-                             Anim::Happy, App::nowMs());
-    }
+    Sprites::drawKidTile(id == PlayerId::Hugo ? 0 : 1, x + 74, y + 65, 88,
+                         App::nowMs());
     canvas.setTextDatum(middle_center);
     canvas.setTextColor(0xFFFF);
     canvas.setTextSize(2);

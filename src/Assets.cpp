@@ -95,3 +95,15 @@ const PixelArt* artForShark(uint8_t idx) {
 }
 
 const PixelArt* artGoalie() { return &kArt_goalie; }
+
+// ---- ROUND 2: kid player tiles (appended by gen_sprites.py kids-emit) ----
+namespace {
+const PixelArt kArt_hugo_kid = {48, 48, ART_HUGO_KID};
+const PixelArt kArt_stella_kid = {48, 48, ART_STELLA_KID};
+}  // namespace
+
+const PixelArt* artKid(uint8_t playerId) {
+  if (playerId == 0) return &kArt_hugo_kid;
+  if (playerId == 1) return &kArt_stella_kid;
+  return nullptr;
+}

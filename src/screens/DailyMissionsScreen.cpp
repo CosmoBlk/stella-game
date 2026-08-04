@@ -114,7 +114,7 @@ private:
                  theme.accent, theme.accent2);
     canvas.setTextDatum(middle_left);
     canvas.setTextColor(theme.text);
-    canvas.setTextSize(strlen(mission->text) <= 23 ? 1 : 1);
+    canvas.setTextSize(strlen(mission->text) <= 16 ? 2 : 1);
     canvas.drawString(mission->text, x + 51, y + 14);
 
     const uint8_t target = mission->target;
@@ -138,6 +138,7 @@ private:
       canvas.fillCircle(x + width - 25, y + 17, 16, TFT_DARKGREEN);
       UI::drawTick(x + width - 25, y + 17, 25);
     }
+    canvas.setTextDatum(top_left);
   }
 
   void openMission() {
@@ -258,6 +259,7 @@ private:
       canvas.setTextSize(1);
       canvas.drawString(collectibleLabel(rewardCollectible_), 96, 153);
     }
+    canvas.setTextDatum(top_left);
   }
 };
 

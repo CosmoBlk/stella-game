@@ -102,7 +102,7 @@ private:
     canvas.fillRoundRect(47, 169, 226, 27, 8, 0xFFFF);
     canvas.setTextDatum(middle_center);
     canvas.setTextColor(0x39E7);
-    canvas.setTextSize(1);
+    canvas.setTextSize(2);
     canvas.drawString(playingMs_ > 0 ? "LET'S PLAY!" : (item ? item->name : "TOY"), 160, 182);
     canvas.setTextDatum(top_left);
   }

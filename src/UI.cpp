@@ -1,4 +1,6 @@
 #include "UI.h"
+#include "Assets.h"
+#include "Icons.h"
 #include "Managers.h"
 #include "App.h"
 #include "Config.h"
@@ -142,6 +144,22 @@ void drawIcon(IconId id, int cx, int cy, int size, uint16_t color, uint16_t colo
   if (id == IconId::None) return;
   if (color2 == 0) color2 = color;
   M5Canvas& canvas = Gfx::c();
+  // Pixel-art icon bitmaps take priority; the primitive glyphs below remain
+  // the fallback for icons without art (arrows, shapes, tail entries).
+  if (const PixelArt* art = iconArt(static_cast<uint8_t>(id))) {
+    const int dh = size;
+    const int dw = size * art->w / art->h;
+    const int x0 = cx - dw / 2;
+    const int y0 = cy - dh / 2;
+    for (int dy = 0; dy < dh; ++dy) {
+      const int sy = dy * art->h / dh;
+      for (int dx = 0; dx < dw; ++dx) {
+        const uint16_t p = art->px[sy * art->w + dx * art->w / dw];
+        if (p != ART_TRANSPARENT) canvas.drawPixel(x0 + dx, y0 + dy, p);
+      }
+    }
+    return;
+  }
   const int half = size / 2;
   const int q = size / 4;
   switch (id) {

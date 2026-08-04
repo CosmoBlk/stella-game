@@ -48,7 +48,7 @@ public:
     canvas.fillRoundRect(16, 118, 288, 79, 12, theme.panel);
     canvas.setTextDatum(middle_center);
     canvas.setTextColor(theme.accent);
-    canvas.setTextSize(1);
+    canvas.setTextSize(2);
     canvas.drawString("FRANKIE FOUND", 160, 130);
 
     const uint8_t count = FrankieWalkSession::discoveryCount();

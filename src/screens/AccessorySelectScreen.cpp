@@ -87,11 +87,12 @@ private:
     canvas.fillRoundRect(36, 167, 248, 31, 9, UI::theme().panel);
     canvas.setTextDatum(middle_center);
     canvas.setTextColor(UI::theme().text);
-    canvas.setTextSize(1);
+    canvas.setTextSize(2);
     canvas.drawString(itemId == ITEM_NONE ? "NONE" : (item ? item->name : "ACCESSORY"), 160, 177);
     if (equipped) {
       canvas.fillRoundRect(117, 185, 86, 12, 5, UI::theme().accent);
       canvas.setTextColor(0xFFFF);
+      canvas.setTextSize(1);
       canvas.drawString("EQUIPPED", 160, 191);
     }
     canvas.setTextDatum(top_left);

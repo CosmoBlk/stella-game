@@ -14,6 +14,9 @@ namespace Sprites {
   void drawCharacter(uint16_t characterItemId, int cx, int cy, int size,
                      Anim anim, uint32_t frameMs,
                      uint16_t accessoryId = 0xFFFF, uint16_t clothingId = 0xFFFF);
+  // Pixel-art portrait tiles for the player-select cards (0=Hugo, 1=Stella).
+  // Falls back to the default characters when tile art is missing.
+  void drawKidTile(uint8_t playerId, int cx, int cy, int size, uint32_t frameMs);
   // Non-character sprites used by games/screens:
   void drawFrankie(int cx, int cy, int size, uint32_t frameMs, bool walking);
   void drawDino(uint8_t dinoId, int cx, int cy, int size, uint16_t frameMs);

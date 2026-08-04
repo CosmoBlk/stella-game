@@ -87,11 +87,12 @@ private:
     canvas.fillRoundRect(36, 164, 248, 34, 9, 0xFFFF);
     canvas.setTextDatum(middle_center);
     canvas.setTextColor(0x39E7);
-    canvas.setTextSize(1);
+    canvas.setTextSize(2);
     canvas.drawString(item ? item->name : "CHARACTER", 160, 176);
     if (equipped) {
       canvas.fillRoundRect(117, 184, 86, 12, 5, UI::theme().accent);
       canvas.setTextColor(0xFFFF);
+      canvas.setTextSize(1);
       canvas.drawString("EQUIPPED", 160, 190);
     }
     canvas.setTextDatum(top_left);

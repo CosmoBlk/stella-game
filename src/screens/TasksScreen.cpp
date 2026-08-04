@@ -84,6 +84,7 @@ private:
       canvas.fillCircle(x + width - 34, y + 37, 28, TFT_DARKGREEN);
       UI::drawTick(x + width - 34, y + 37, 46);
     }
+    canvas.setTextDatum(top_left);
   }
 };
 

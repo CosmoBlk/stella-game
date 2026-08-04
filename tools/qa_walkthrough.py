@@ -188,7 +188,8 @@ def script_games(h: Harness):
         h.drain(0.6)
         for _ in range(i + 1):
             h.ser.write(b"c")
-            time.sleep(0.35)
+            time.sleep(0.45)
+        h.drain(1.0)  # let the slide animation settle before activating
         h.ser.write(b"b")
         name = None
         deadline = time.time() + 5

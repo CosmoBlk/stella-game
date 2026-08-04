@@ -395,7 +395,7 @@ private:
     canvas.drawRoundRect(25, 38, 270, 169, 16, TFT_CYAN);
     canvas.setTextDatum(middle_center);
     canvas.setTextColor(TFT_WHITE);
-    canvas.setTextSize(3);
+    canvas.setTextSize(2);
     canvas.drawString("SHARK SWIM", 160, 61);
     Sprites::drawShark(selectedShark_, 160, 116, 77, animMs_);
     canvas.setTextSize(2);
@@ -518,6 +518,7 @@ private:
     canvas.fillRect(8, 36, static_cast<int>(304.0f * (ROUND_MS - elapsedMs_) / ROUND_MS), 4, TFT_CYAN);
     canvas.setTextDatum(middle_center);
     canvas.drawString("B PAUSE", 160, 231);
+    canvas.setTextDatum(top_left);
   }
 
   void drawReveal(M5Canvas& canvas) {
@@ -528,6 +529,7 @@ private:
     canvas.setTextColor(rgb(39, 46, 66));
     canvas.setTextSize(1);
     canvas.drawString(revealText_, 160, 70);
+    canvas.setTextDatum(top_left);
   }
 
   void drawPaused(M5Canvas& canvas) {
@@ -539,6 +541,7 @@ private:
     canvas.drawString("PAUSED", 160, 108);
     canvas.setTextSize(1);
     canvas.drawString("B TO SWIM  HOLD B TO EXIT", 160, 142);
+    canvas.setTextDatum(top_left);
   }
 
   void drawResult(M5Canvas& canvas) {

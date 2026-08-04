@@ -1,6 +1,7 @@
 #include "Sprites.h"
 #include "Assets.h"
 #include "Bg.h"
+#include "Content.h"
 #include "Managers.h"
 #include <M5Unified.h>
 #include <math.h>
@@ -1527,6 +1528,17 @@ void drawCharacter(uint16_t characterItemId, int cx, int cy, int size, Anim anim
     return;
   }
   drawBuddy(characterItemId, cx, cy, size, anim, frameMs, accessoryId, clothingId);
+}
+
+void drawKidTile(uint8_t playerId, int cx, int cy, int size, uint32_t frameMs) {
+  const PixelArt* art = artKid(playerId);
+  if (art != nullptr) {
+    const int bob = (frameMs / 400) % 2 == 0 ? 0 : clampi(size / 30, 1, 3);
+    blitArt(Gfx::c(), art, cx, cy + bob, size);
+    return;
+  }
+  drawCharacter(playerId == 0 ? ITEM_HUGO_DEFAULT_SOCCER : ITEM_STELLA_DEFAULT_PRINCESS,
+                cx, cy, size, Anim::Happy, frameMs);
 }
 
 void drawFrankie(int cx, int cy, int size, uint32_t frameMs, bool walking) {

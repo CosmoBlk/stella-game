@@ -213,7 +213,7 @@ private:
     canvas.setTextDatum(middle_left);
     canvas.setTextColor(theme.text);
     canvas.setTextSize(3);
-    canvas.drawString("TRY AGAIN SOON!", 94, 147);
+    canvas.drawString("TRY AGAIN!", 94, 147);
     UI::drawButtonBar("", "OK", "", IconId::None, IconId::Heart, IconId::None);
   }
 

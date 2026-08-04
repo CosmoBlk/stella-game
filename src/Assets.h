@@ -7,3 +7,4 @@ const PixelArt* artForItem(uint16_t itemId);   // character item ids (0-11, 60-7
 const PixelArt* artForDino(uint8_t idx);       // 0-11
 const PixelArt* artForShark(uint8_t idx);      // 0-5
 const PixelArt* artGoalie();
+const PixelArt* artKid(uint8_t playerId);   // 0=Hugo tile, 1=Stella tile

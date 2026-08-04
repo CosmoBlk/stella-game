@@ -1,4 +1,5 @@
 #include "Screen.h"
+#include "../Bg.h"
 #include "../App.h"
 #include "../Managers.h"
 #include "../UI.h"
@@ -38,7 +39,8 @@ public:
 
   void draw() override {
     M5Canvas& canvas = Gfx::c();
-    UI::drawBackground();
+    if (Bg::ensureUi("menu")) Bg::draw();
+    else UI::drawBackground();
     UI::drawHeader("MAIN MENU");
     if (count == 0) {
       UI::drawBigCentred("MORE SOON!", 115, 2, UI::theme().text);
@@ -55,7 +57,7 @@ public:
         UI::drawIcon(item.icon, 28, y + 14, 20, UI::theme().accent, UI::theme().accent2);
         canvas.setTextDatum(middle_left);
         canvas.setTextColor(UI::theme().text);
-        canvas.setTextSize(1);
+        canvas.setTextSize(2);
         canvas.drawString(item.label, 48, y + 14);
         UI::drawIcon(IconId::ArrowR, 292, y + 14, 14, UI::theme().text);
       }

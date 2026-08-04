@@ -407,6 +407,7 @@ private:
     canvas.fillRect(8, 35, static_cast<int>(304.0f * (ROUND_MS - elapsedMs_) / ROUND_MS), 4, TFT_YELLOW);
     canvas.setTextDatum(middle_center);
     canvas.drawString("B PAUSE", 160, 231);
+    canvas.setTextDatum(top_left);
   }
 
   void drawPaused(M5Canvas& canvas) {
@@ -418,6 +419,7 @@ private:
     canvas.drawString("PAUSED", 160, 108);
     canvas.setTextSize(1);
     canvas.drawString("B TO RIDE  HOLD B TO EXIT", 160, 142);
+    canvas.setTextDatum(top_left);
   }
 
   void drawResult(M5Canvas& canvas) {
