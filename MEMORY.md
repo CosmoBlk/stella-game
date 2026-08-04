@@ -83,3 +83,13 @@ Working log. Newest entries at the bottom. Decisions marked **D**, findings **F*
   return still preserves slot via ctx (that path doesn't re-enter the category screen).
 - **D** Shop serial logs "[shop] browsing/bought <NAME>" -> QA navigates by name now.
 - **F** ctx cleared on player switch (no cross-kid shop state).
+
+## Regression suite green (23:2x-00:0x)
+- **F** All 5 QA suites pass rerun-safe: smoke 17, deep 24, games 33, phase2 61, final 77 —
+  212 on-device assertions, 0 failures. Every suite factory-resets first ('r' console cmd).
+- **F** Reviews: codex review --base takes no prompt arg (relaunched); gemini needed
+  GEMINI_API_KEY from ~/.claude/.env (relaunched). Both running.
+- **F** Art montage first look: Stella set is exactly the brief (GBC chibi, recognisable
+  Ariel/Rapunzel/Cinderella/Moana/Rumi). Hugo/dinos/sharks still generating.
+- **T** Tilt SIGN in SharkSwim/RollerCoaster unverifiable over serial — needs 10s in-hand
+  check; flip one sign if inverted (noted for George).

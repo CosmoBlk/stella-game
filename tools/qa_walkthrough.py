@@ -90,6 +90,7 @@ def script_smoke(h: Harness):
     h.reset_device()
     h.step("", r"\[boot\] Pocket Buddy ready", 15, "boots")
     h.mute()
+    h.step("r", r"factory reset", 5, "fresh save")
     h.step("", PSEL, 8, "auto-advances to PlayerSelect")
     h.step("b", r"->\s*HOME", 5, "B selects highlighted profile -> Home")
     h.step("s", r"player=HUGO", 3, "Hugo profile active")
@@ -111,6 +112,7 @@ def script_deep(h: Harness):
     h.reset_device()
     h.step("", r"\[boot\] Pocket Buddy ready", 15, "boots")
     h.mute()
+    h.step("r", r"factory reset", 5, "fresh save")
     h.step("", PSEL, 8, "PlayerSelect")
     h.step("b", r"->\s*HOME", 5, "Hugo -> Home")
     # --- task completion ---
@@ -171,6 +173,7 @@ def script_games(h: Harness):
     h.reset_device()
     h.step("", r"\[boot\] Pocket Buddy ready", 15, "boots")
     h.mute()
+    h.step("r", r"factory reset", 5, "fresh save")
     h.step("", PSEL, 8, "PlayerSelect")
     h.step("b", r"->\s*HOME", 5, "Hugo -> Home")
     h.step("c", r"->\s*GAMES", 5, "open GamesMenu")

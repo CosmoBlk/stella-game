@@ -76,8 +76,8 @@ void poll() {
         break;
       case 'r':
         Save::factoryReset();
-        App::goTo(ScreenId::PlayerSelect);
         Serial.println("[dbg] factory reset");
+        App::goTo(ScreenId::PlayerSelect);
         break;
       case '0': case '1': case '2':
         Save::data().settings.volume = command - '0';

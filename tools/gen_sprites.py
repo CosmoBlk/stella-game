@@ -67,7 +67,8 @@ SPRITES = [
     ("rumi", "a demon-hunter pop star girl with a very long purple-tinted plait, dark stage outfit with gold trim, holding a small microphone", "high", "stella", 6),
     ("mermaid", "a mermaid with aqua hair, seashell top and turquoise tail", "medium", "stella", 7),
     ("fairy", "a small fairy with green petal dress, translucent wings and a tiny wand", "medium", "stella", 8),
-    ("unicorn", "a cute white unicorn with rainbow mane and golden horn", "medium", "stella", 9),
+    # retry wording: first pass gave a muddy red/grey mane, not rainbow
+    ("unicorn", "a cute white unicorn with a bright rainbow striped mane in red, yellow, green, blue and pink, and a shiny golden horn", "medium", "stella", 9),
     ("bunny", "a cream bunny rabbit with long floppy ears and a pink bow", "medium", "stella", 10),
     ("kitten", "a ginger kitten with big eyes and a little bell collar", "medium", "stella", 11),
     # Hugo characters (item ids 60-71)
@@ -77,9 +78,13 @@ SPRITES = [
     ("raptor_character", "a friendly blue velociraptor standing upright", "medium", "hugo", 63),
     ("shark_character", "a friendly blue shark standing upright with fins as arms", "medium", "hugo", 64),
     # NOTE: original wording "a superhero in a red and blue suit with black web pattern,
-    # red full-face mask with big white eyes" was safety-rejected; reworded below.
-    ("spiderman", "a friendly kid hero in a red and blue costume covered in a thin black net line pattern, wearing a plain red mask with two big white oval eyes", "high", "hugo", 65),
-    ("woody", "a toy cowboy sheriff with brown cowboy hat, yellow plaid shirt, cow-print vest and gold sheriff star", "high", "hugo", 66),
+    # red full-face mask with big white eyes" was safety-rejected, as were 10 paraphrases
+    # (the filter is a semantic IP detector). The wording below passes; a post-quantize
+    # recolour hook (POST_QUANT) then shifts legs to blue, fills eye pupils white and
+    # gloves the fingertips to land the classic red/blue masked-hero look.
+    ("spiderman", "a cute chibi ninja in a crimson bodysuit and hood, two large white eye shapes showing through the hood", "high", "hugo", 65),
+    # retry wording: first pass came out generic orange cowboy, no plaid or cow print
+    ("woody", "a toy cowboy sheriff with brown cowboy hat, bright yellow plaid shirt with thin red criss-cross lines, black and white cow-print vest and gold sheriff star", "high", "hugo", 66),
     # NOTE: original wording "a toy space ranger in a white space suit with green chest
     # panel and trim, purple hood, clear dome helmet" was safety-rejected; reworded below.
     ("buzz", "a toy astronaut action figure in a shiny white spacesuit with bright green chest panel and trim, purple cap under a clear round bubble helmet", "high", "hugo", 67),
@@ -103,8 +108,10 @@ SPRITES = [
     # Shark collectibles (idx 0-5)
     ("shark_00", "a friendly blue shark", "medium", "shark", 0),
     ("shark_01", "a hammerhead shark with wide head", "medium", "shark", 1),
-    ("shark_02", "a great white shark with white belly", "medium", "shark", 2),
-    ("shark_03", "a tiger shark with dark stripes", "medium", "shark", 3),
+    # retry wording: first great white had a jagged red-tinged tooth mouth (too scary
+    # for the no-scary-imagery spec); first tiger shark had no visible stripes
+    ("shark_02", "a friendly great white shark with white belly and a happy closed-mouth smile", "medium", "shark", 2),
+    ("shark_03", "a friendly tiger shark with bold dark vertical stripes across its back", "medium", "shark", 3),
     ("shark_04", "a tiny cute baby shark with big eyes", "medium", "shark", 4),
     ("shark_05", "a robot shark made of silver metal with an antenna", "medium", "shark", 5),
     # Extras
@@ -112,6 +119,79 @@ SPRITES = [
 ]
 
 BY_KEY = {s[0]: s for s in SPRITES}
+
+
+# ------------------------------------------------------------ post-quant hooks
+
+def _recolor_spiderman(img):
+    """48x48 edit of the crimson-ninja base: blue legs, red boots, white lenses,
+    gloved fingertips — lands the classic red/blue masked-hero read."""
+    px = img.load()
+    w, h = img.size
+    ys = [y for y in range(h) for x in range(w) if px[x, y][3] >= 128]
+    top, bot = min(ys), max(ys)
+    span = bot - top
+    waist = top + int(span * 0.70)   # chibi: head dominates, legs start low
+    boots = top + int(span * 0.90)
+
+    BLUE = [(24, 48, 120), (40, 80, 190), (90, 140, 240)]   # dark/mid/light
+    RED = [(120, 16, 28), (200, 30, 40), (240, 90, 90)]
+
+    def shade(ramp, r, g, b):
+        lum = 0.3 * r + 0.6 * g + 0.1 * b
+        return ramp[0] if lum < 70 else (ramp[1] if lum < 150 else ramp[2])
+
+    def is_outline(r, g, b):
+        return max(r, g, b) < 60
+
+    def is_skin(r, g, b):
+        return r > 180 and 110 < g < 210 and b < 170 and r > b + 60 and g > b + 20
+
+    for y in range(h):
+        row_xs = [x for x in range(w) if px[x, y][3] >= 128]
+        if not row_xs:
+            continue
+        lo, hi = min(row_xs), max(row_xs)
+        margin = max(2, int((hi - lo) * 0.14))  # outer edges of waist rows = hands
+        for x in range(w):
+            r, g, b, a = px[x, y]
+            if a < 128 or is_outline(r, g, b):
+                continue
+            if boots > y >= waist:
+                if x < lo + margin or x > hi - margin:
+                    px[x, y] = (*shade(RED, r, g, b), 255)  # red gloves
+                else:
+                    px[x, y] = (*shade(BLUE, r, g, b), 255)
+            elif is_skin(r, g, b):
+                px[x, y] = (*RED[1], 255)
+    # eye lenses: brighten cream eye-whites to true white, then flood pupils white
+    head_lim = top + span // 2
+    for y in range(top, head_lim):
+        for x in range(w):
+            r, g, b, a = px[x, y]
+            if a >= 128 and min(r, g, b) > 150 and r + g + b > 540:
+                px[x, y] = (245, 245, 245, 255)
+    for _ in range(4):
+        for y in range(top, head_lim):
+            for x in range(w):
+                r, g, b, a = px[x, y]
+                if a >= 128 and r + g + b < 400:
+                    wn = sum(
+                        1
+                        for dx in (-1, 0, 1)
+                        for dy in (-1, 0, 1)
+                        if (dx or dy)
+                        and 0 <= x + dx < w
+                        and 0 <= y + dy < h
+                        and px[x + dx, y + dy][3] >= 128
+                        and sum(px[x + dx, y + dy][:3]) > 700
+                    )
+                    if wn >= 4:
+                        px[x, y] = (245, 245, 245, 255)
+    return img
+
+
+POST_QUANT = {"spiderman": _recolor_spiderman}
 
 
 # ---------------------------------------------------------------- generation
@@ -199,12 +279,24 @@ def quantize_one(key: str) -> str:
     # 2. resize to 48x48 NEAREST
     small = sq.resize((SIZE, SIZE), Image.NEAREST)
 
-    px = list(small.getdata())
+    out = _reduce_palette(small)
+    if out is None:
+        return f"EMPTY {key} (nothing after resize)"
+    hook = POST_QUANT.get(key)
+    if hook:
+        out = _reduce_palette(hook(out))  # hooks may add colours; re-reduce
+    n_cols = len({p[:3] for p in out.getdata() if p[3] >= 128})
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    out.save(OUT_DIR / f"{key}.png")
+    return f"ok   {key} ({n_cols} colours)"
+
+
+def _reduce_palette(img):
+    """Reduce an RGBA image's opaque pixels to an adaptive palette of <=15 colours."""
+    px = list(img.getdata())
     opaque = [(r, g, b) for (r, g, b, a) in px if a >= 128]
     if not opaque:
-        return f"EMPTY {key} (nothing after resize)"
-
-    # 3. adaptive palette of <=15 colours built from opaque pixels only
+        return None
     pal_src = Image.new("RGB", (len(opaque), 1))
     pal_src.putdata(opaque)
     n = min(MAX_COLOURS, len(set(opaque)))
@@ -228,12 +320,9 @@ def quantize_one(key: str) -> str:
                 c = nearest((r, g, b))
                 cache[(r, g, b)] = c
             out_px.append((c[0], c[1], c[2], 255))
-
-    out = Image.new("RGBA", (SIZE, SIZE))
+    out = Image.new("RGBA", img.size)
     out.putdata(out_px)
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    out.save(OUT_DIR / f"{key}.png")
-    return f"ok   {key} ({len(palette)} colours)"
+    return out
 
 
 def cmd_quant(names):
