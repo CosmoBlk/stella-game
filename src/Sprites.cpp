@@ -1,4 +1,5 @@
 #include "Sprites.h"
+#include "Assets.h"
 #include "Managers.h"
 #include <M5Unified.h>
 #include <math.h>
@@ -1450,12 +1451,80 @@ void drawRoomMini(M5Canvas& canvas, uint16_t roomId, int cx, int cy, int size) {
   }
 }
 
+// ---------- Pixel-art bitmap rendering (generated assets) ----------
+// Nearest-neighbour scaled blit with transparency key; optional 90-degree
+// rotation (swimming) and flat-colour override (silhouettes).
+void blitArt(M5Canvas& canvas, const PixelArt* art, int cx, int cy, int size,
+             bool rot90 = false, uint16_t flatColor = 0, bool useFlat = false) {
+  if (art == nullptr || art->h == 0) return;
+  const int dh = size;
+  const int dw = size * art->w / art->h;
+  const int x0 = cx - dw / 2;
+  const int y0 = cy - dh / 2;
+  for (int dy = 0; dy < dh; ++dy) {
+    const int sy = dy * art->h / dh;
+    for (int dx = 0; dx < dw; ++dx) {
+      const int sx = dx * art->w / dw;
+      const uint16_t p = rot90 ? art->px[(art->h - 1 - sx) * art->w + sy]
+                               : art->px[sy * art->w + sx];
+      if (p != ART_TRANSPARENT) {
+        canvas.drawPixel(x0 + dx, y0 + dy, useFlat ? flatColor : p);
+      }
+    }
+  }
+}
+
+void drawBitmapBuddy(M5Canvas& canvas, const PixelArt* art, int cx, int cy, int size,
+                     Anim anim, uint32_t frameMs, uint16_t accessoryId,
+                     uint16_t clothingId) {
+  (void)clothingId;  // bitmap characters wear their painted outfit
+  BuddyPose pose = poseFor(anim, frameMs, size);
+  const int bx = cx + pose.sway;
+  const int by = cy + pose.bob;
+  // same geometry the procedural body uses, so overlays land in place
+  const int headR = clampi(size * 23 / 100, 8, 45);
+  const int bodyW = clampi(size * 38 / 100, 13, 76);
+  const int bodyH = clampi(size * 34 / 100, 13, 68);
+  const int headY = by - size / 4;
+  const int torsoY = headY + headR * 3 / 4;
+
+  const bool backAccessory = accessoryId == 16 || accessoryId == 74 || accessoryId == 85;
+  if (backAccessory) {
+    drawAccessoryOverlay(canvas, accessoryId, bx, headY, headR, torsoY, bodyW, bodyH);
+  }
+  blitArt(canvas, art, bx, by, size, pose.horizontal);
+  if (!backAccessory && accessoryId != 0xFFFF) {
+    drawAccessoryOverlay(canvas, accessoryId, bx, headY, headR, torsoY, bodyW, bodyH);
+  }
+
+  if (pose.zzz) {
+    const int zz = clampi(size / 12, 4, 14);
+    for (int i = 0; i < 3; ++i) {
+      const int x = bx + headR + i * zz;
+      const int y = headY - headR - i * zz;
+      canvas.drawLine(x, y, x + zz, y, C_PURPLE);
+      canvas.drawLine(x + zz, y, x, y + zz, C_PURPLE);
+      canvas.drawLine(x, y + zz, x + zz, y + zz, C_PURPLE);
+    }
+  }
+  if (pose.chomp) {
+    canvas.fillCircle(bx + headR, headY + headR / 2, 2, C_GOLD);
+    canvas.fillCircle(bx + headR + bodyW / 4, headY + headR, 2, C_GOLD);
+  }
+  if (pose.starBurst) drawSparkles(canvas, bx, by, size * 3 / 5, frameMs / 120, C_GOLD);
+}
+
 }  // namespace
 
 namespace Sprites {
 
 void drawCharacter(uint16_t characterItemId, int cx, int cy, int size, Anim anim,
                    uint32_t frameMs, uint16_t accessoryId, uint16_t clothingId) {
+  const PixelArt* art = artForItem(characterItemId);
+  if (art != nullptr) {
+    drawBitmapBuddy(Gfx::c(), art, cx, cy, size, anim, frameMs, accessoryId, clothingId);
+    return;
+  }
   drawBuddy(characterItemId, cx, cy, size, anim, frameMs, accessoryId, clothingId);
 }
 
@@ -1464,20 +1533,47 @@ void drawFrankie(int cx, int cy, int size, uint32_t frameMs, bool walking) {
 }
 
 void drawDino(uint8_t dinoId, int cx, int cy, int size, uint16_t frameMs) {
+  const PixelArt* art = artForDino(dinoId);
+  if (art != nullptr) {
+    const int bob = (frameMs / 300) % 2 == 0 ? 0 : clampi(size / 24, 1, 3);
+    blitArt(Gfx::c(), art, cx, cy + bob, size);
+    return;
+  }
   drawDinoInternal(Gfx::c(), dinoId, cx, cy, size, frameMs, false);
 }
 
 void drawDinoSilhouette(uint8_t dinoId, int cx, int cy, int size) {
+  const PixelArt* art = artForDino(dinoId);
+  if (art != nullptr) {
+    blitArt(Gfx::c(), art, cx, cy, size, false, DARK, true);
+    return;
+  }
   drawDinoInternal(Gfx::c(), dinoId, cx, cy, size, 0, true);
 }
 
 void drawShark(uint8_t sharkId, int cx, int cy, int size, uint32_t frameMs) {
+  const PixelArt* art = artForShark(sharkId);
+  if (art != nullptr) {
+    const int bob = static_cast<int>((frameMs / 250) % 3) - 1;
+    blitArt(Gfx::c(), art, cx, cy + bob, size);
+    return;
+  }
   drawSharkInternal(Gfx::c(), sharkId, cx, cy, size, frameMs);
 }
 
 void drawGoalie(int cx, int cy, int size, int diveDir, float diveT) {
   M5Canvas& canvas = Gfx::c();
   float t = clampf(diveT, 0.0f, 1.0f);
+  {
+    const PixelArt* art = artGoalie();
+    if (art != nullptr) {
+      const int dir0 = diveDir < 0 ? -1 : (diveDir > 0 ? 1 : 0);
+      const int leanX = static_cast<int>(dir0 * t * size / 2);
+      const int leanY = static_cast<int>(t * size / 6);
+      blitArt(canvas, art, cx + leanX, cy + leanY, size);
+      return;
+    }
+  }
   int dir = diveDir < 0 ? -1 : (diveDir > 0 ? 1 : 0);
   int leanX = static_cast<int>(dir * t * size / 3);
   int leanY = static_cast<int>(t * size / 8);

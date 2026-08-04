@@ -110,7 +110,8 @@ SPRITES = [
     ("shark_01", "a hammerhead shark with wide head", "medium", "shark", 1),
     # retry wording: first great white had a jagged red-tinged tooth mouth (too scary
     # for the no-scary-imagery spec); first tiger shark had no visible stripes
-    ("shark_02", "a friendly great white shark with white belly and a happy closed-mouth smile", "medium", "shark", 2),
+    # (second retry added explicit grey — first retry came out teal)
+    ("shark_02", "a friendly light grey great white shark with a white belly and a happy closed-mouth smile", "medium", "shark", 2),
     ("shark_03", "a friendly tiger shark with bold dark vertical stripes across its back", "medium", "shark", 3),
     ("shark_04", "a tiny cute baby shark with big eyes", "medium", "shark", 4),
     ("shark_05", "a robot shark made of silver metal with an antenna", "medium", "shark", 5),

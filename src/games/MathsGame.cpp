@@ -358,7 +358,6 @@ private:
     chosenIndex_ = index;
     if (index == question_.correctIndex) {
       ++correct_;
-      ++App::profile().maths.correctAnswers;
       adjustStrength(question_.category, 5);
       showCorrect_ = true;
       showGoodTry_ = false;

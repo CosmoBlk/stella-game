@@ -164,7 +164,9 @@ bool App::spendCoins(uint16_t amount) {
   }
   profile().coins -= amount;
   Audio::play(Sfx::Purchase);
-  Save::saveNow();
+  // Debounced only: purchase flows saveNow() after the item is granted, so a
+  // power cut can't persist spent coins without the purchase.
+  Save::requestSave();
   return true;
 }
 

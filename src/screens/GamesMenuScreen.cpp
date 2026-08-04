@@ -54,6 +54,15 @@ public:
         available_[count_++] = entry;
       }
     }
+    if (App::ctx.fromDailyMissions) {
+      App::ctx.fromDailyMissions = false;
+      for (uint8_t i = 0; i < count_; ++i) {
+        if (static_cast<uint8_t>(available_[i]->gameId) == App::ctx.gameId) {
+          selected_ = i;
+          break;
+        }
+      }
+    }
   }
 
   void update(uint32_t) override {}

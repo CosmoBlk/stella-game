@@ -21,7 +21,6 @@ public:
     leaving_ = false;
     App::awardCoins(COINS_WALK_FRANKIE);
     App::raiseEvent(GameEvent::FrankieWalked);
-    ++App::profile().totalFrankieWalks;
     Save::saveNow();
     Audio::play(Sfx::Celebrate);
   }

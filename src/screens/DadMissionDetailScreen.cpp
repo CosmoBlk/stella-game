@@ -115,7 +115,6 @@ private:
     }
 
     App::raiseEvent(GameEvent::DadMissionDone);
-    ++profile.totalDadMissionsCompleted;
     rememberMission(profile, mission.id);
     Save::saveNow();
     Audio::play(wonBadge ? Sfx::Celebrate : Sfx::MissionDone);
