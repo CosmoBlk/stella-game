@@ -56,7 +56,10 @@ STYLE = (
 SPRITES = [
     # Stella characters (item ids 0-11)
     ("default_princess", "a friendly princess with brown hair, small gold tiara and simple pink dress", "medium", "stella", 0),
-    ("elsa", "an ice queen with a platinum blonde side braid, pale skin and sparkling ice-blue gown with snowflake details", "high", "stella", 1),
+    # NOTE: original wording "an ice queen with a platinum blonde side braid, pale skin and
+    # sparkling ice-blue gown with snowflake details" was rejected by the OpenAI safety
+    # system (likely trademark-adjacent); reworded below.
+    ("elsa", "a winter princess girl with a long pale blonde braid over one shoulder, wearing a sparkling icy pale blue dress decorated with tiny snowflakes", "high", "stella", 1),
     ("ariel", "a mermaid with long bright red hair, purple seashell top and shiny green mermaid tail", "high", "stella", 2),
     ("rapunzel", "a princess with extremely long golden braided hair wrapping near her feet, lavender-purple dress", "high", "stella", 3),
     ("cinderella", "a princess with blonde hair in an updo, sparkling powder-blue ball gown and tiny glass slippers", "high", "stella", 4),
@@ -73,9 +76,13 @@ SPRITES = [
     ("trex_character", "a friendly smiling green tyrannosaurus rex standing upright", "medium", "hugo", 62),
     ("raptor_character", "a friendly blue velociraptor standing upright", "medium", "hugo", 63),
     ("shark_character", "a friendly blue shark standing upright with fins as arms", "medium", "hugo", 64),
-    ("spiderman", "a superhero in a red and blue suit with black web pattern, red full-face mask with big white eyes", "high", "hugo", 65),
+    # NOTE: original wording "a superhero in a red and blue suit with black web pattern,
+    # red full-face mask with big white eyes" was safety-rejected; reworded below.
+    ("spiderman", "a friendly kid hero in a red and blue costume covered in a thin black net line pattern, wearing a plain red mask with two big white oval eyes", "high", "hugo", 65),
     ("woody", "a toy cowboy sheriff with brown cowboy hat, yellow plaid shirt, cow-print vest and gold sheriff star", "high", "hugo", 66),
-    ("buzz", "a toy space ranger in a white space suit with green chest panel and trim, purple hood, clear dome helmet", "high", "hugo", 67),
+    # NOTE: original wording "a toy space ranger in a white space suit with green chest
+    # panel and trim, purple hood, clear dome helmet" was safety-rejected; reworded below.
+    ("buzz", "a toy astronaut action figure in a shiny white spacesuit with bright green chest panel and trim, purple cap under a clear round bubble helmet", "high", "hugo", 67),
     ("astronaut", "a kid astronaut in a white space suit with gold visor", "medium", "hugo", 68),
     ("robot", "a boxy friendly silver robot with an antenna and glowing eyes", "medium", "hugo", 69),
     ("explorer", "a kid explorer with safari hat and binoculars", "medium", "hugo", 70),

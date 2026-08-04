@@ -15,11 +15,16 @@ void dumpState() {
   for (uint16_t id = 0; id < MAX_ITEMS; ++id) {
     if (profile.inventory.owned(id)) ++ownedCount;
   }
-  Serial.printf("[dbg] player=%s coins=%lu needs=%u/%u/%u level=%u day=%lu owned=%u\n",
+  Serial.printf("[dbg] player=%s coins=%lu needs=%u/%u/%u level=%u day=%lu owned=%u "
+                "eq=%u/%u/%u/%u/%u jb=%u dad=%u\n",
                 App::player() == PlayerId::Hugo ? "HUGO" : "STELLA",
                 static_cast<unsigned long>(profile.coins), profile.buddy.hunger,
                 profile.buddy.happiness, profile.buddy.energy, profile.maths.currentLevel,
-                static_cast<unsigned long>(profile.daily.dayNumber), ownedCount);
+                static_cast<unsigned long>(profile.daily.dayNumber), ownedCount,
+                profile.inventory.equippedCharacter, profile.inventory.equippedClothing,
+                profile.inventory.equippedAccessory, profile.inventory.equippedToy,
+                profile.inventory.equippedRoom, profile.buddy.jellyBeans,
+                profile.daily.rewardedDadMissions);
 }
 }
 
@@ -62,8 +67,17 @@ void poll() {
       case 'M': App::goTo(ScreenId::DailyMissions); break;
       case 'K': App::goTo(ScreenId::CollectionCategory); break;
       case 'G': App::goTo(ScreenId::GamesMenu); break;
+      case 'E': App::goTo(ScreenId::CharacterSelect); break;
+      case 'O': App::goTo(ScreenId::AccessorySelect); break;
+      case 'L': App::goTo(ScreenId::ClothingSelect); break;
+      case 'T': App::goTo(ScreenId::GetDressedTimer); break;
       case 'i':
         Serial.printf("[dbg] screen=%u\n", static_cast<unsigned>(App::current()));
+        break;
+      case 'r':
+        Save::factoryReset();
+        App::goTo(ScreenId::PlayerSelect);
+        Serial.println("[dbg] factory reset");
         break;
       case '0': case '1': case '2':
         Save::data().settings.volume = command - '0';

@@ -51,6 +51,7 @@ namespace Save {
   void saveNow();                // immediate atomic write (purchases etc.)
   void update();                 // pump debounced writes
   void resetProfileDefaults(PlayerProfile& p, PlayerId id);
+  void factoryReset();           // fresh defaults for everything, saved immediately
 }
 
 // ---------------- Time / daily reset ----------------

@@ -137,6 +137,11 @@ void update() {
   if (dirty && millis() - dirtyAt >= 1000) saveNow();
 }
 
+void factoryReset() {
+  resetAllDefaults();
+  saveNow();
+}
+
 void resetProfileDefaults(PlayerProfile& profile, PlayerId id) {
   memset(&profile, 0, sizeof(profile));
   profile.id = static_cast<uint8_t>(id);

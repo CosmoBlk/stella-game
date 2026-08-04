@@ -139,6 +139,7 @@ Screen* App::screen(ScreenId id) {
 
 void App::selectPlayer(PlayerId id) {
   activePlayer = id;
+  ctx = {0, 0, 0, 0, 0, 0, 0xFF, 0, false};  // no stale context across kids
   Save::requestSave();
 }
 

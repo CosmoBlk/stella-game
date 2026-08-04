@@ -58,6 +58,7 @@ public:
     }
     selected_ = count_ == 0 ? 0 : App::ctx.selectSlot % count_;
     flashMs_ = 0;
+    logBrowsing();
   }
 
   void update(uint32_t deltaMs) override {
@@ -155,6 +156,11 @@ public:
   const char* name() const override { return "ShopBrowse"; }
 
 private:
+  void logBrowsing() const {
+    const ItemDef* item = currentItem();
+    Serial.printf("[shop] browsing %s\n", item ? item->name : "(empty)");
+  }
+
   const ItemDef* currentItem() const {
     return count_ == 0 ? nullptr : itemById(itemIds_[selected_]);
   }
@@ -165,6 +171,7 @@ private:
     App::ctx.selectSlot = selected_;
     flashMs_ = 0;
     Audio::play(Sfx::Select);
+    logBrowsing();
   }
 
   uint16_t itemIds_[MAX_ITEMS]{};

@@ -72,3 +72,14 @@ Working log. Newest entries at the bottom. Decisions marked **D**, findings **F*
   (buddy flows + Elsa/Spider-Man buy+equip). Then sprites integration, reviews, handover
   (factory reset, overnight mute, volume note for George).
 - **F** George asleep — full autonomy for the rest of the build.
+
+## Acceptance QA green (23:5x)
+- **F** script_final 77/77: factory reset ('r'), Stella buys+equips ELSA + BUTTERFLY WINGS
+  (auto-equip into empty slot on purchase) + RUMI PLAIT; Hugo buys+equips SPIDER-MAN;
+  jelly bean bag -> pouch; buddy PLAY raises happiness; get-dressed timer; both profiles'
+  equipment + pouch persist across reboot.
+- **D** Product rule established: ALL carousels reset selection on enter (MainMenu,
+  ShopCategory done; kid-predictability beats position memory). Post-purchase browse
+  return still preserves slot via ctx (that path doesn't re-enter the category screen).
+- **D** Shop serial logs "[shop] browsing/bought <NAME>" -> QA navigates by name now.
+- **F** ctx cleared on player switch (no cross-kid shop state).

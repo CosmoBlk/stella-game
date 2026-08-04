@@ -120,6 +120,7 @@ public:
       autoEquipIfEmpty(*item_, profile.inventory);
     }
 
+    Serial.printf("[shop] bought %s\n", item_->name);
     App::raiseEvent(GameEvent::ItemBought, static_cast<uint8_t>(item_->id));
     Save::saveNow();
     App::goTo(ScreenId::PurchaseResult);

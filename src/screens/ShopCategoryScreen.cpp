@@ -24,8 +24,7 @@ void drawCentred(const char* text, int cx, int y, int size, uint16_t colour) {
 class ShopCategoryScreen final : public Screen {
 public:
   void enter() override {
-    selected_ = App::ctx.shopCategory < static_cast<uint8_t>(ItemCategory::COUNT)
-      ? App::ctx.shopCategory : 0;
+    selected_ = 0;  // always open at CHARACTERS — predictable for little kids
   }
 
   void update(uint32_t) override {}
