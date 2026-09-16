@@ -475,19 +475,19 @@ def script_final(h: Harness):
     h.step("ggg", "", 0, "grant 300 coins")
     h.drain(1.2)
     _open_shop_category(h, 0)          # CHARACTERS
-    if _browse_to(h, "ELSA"):
-        _buy(h, "ELSA")
+    if _browse_to(h, "ELLA"):
+        _buy(h, "ELLA")
     h.step("E", r"CHARACTER", 5, "character select")
     h.step("c", "", 0, "next character")
     h.step("b", "", 0, "equip")
     h.drain(1.5)
     d = _dump(h)
     if re.search(r"eq=1/", d):
-        print("  PASS  Stella equipped ELSA")
-        h.passed.append("stella equips elsa")
+        print("  PASS  Stella equipped ELLA")
+        h.passed.append("stella equips ella")
     else:
-        print(f"  FAIL  Stella equip Elsa: {d}")
-        h.failed.append("stella equips elsa")
+        print(f"  FAIL  Stella equip Ella: {d}")
+        h.failed.append("stella equips ella")
     _open_shop_category(h, 1)          # ACCESSORIES
     if _browse_to(h, "BUTTERFLY WINGS"):
         _buy(h, "BUTTERFLY WINGS")     # auto-equips into empty slot
@@ -500,19 +500,19 @@ def script_final(h: Harness):
         print(f"  FAIL  wings: {d}")
         h.failed.append("stella wings equipped")
     _open_shop_category(h, 1)          # ACCESSORIES again
-    if _browse_to(h, "RUMI PLAIT"):
-        _buy(h, "RUMI PLAIT")
+    if _browse_to(h, "REBECCA PLAIT"):
+        _buy(h, "REBECCA PLAIT")
     h.step("O", r"ACCESSORY", 5, "accessory select")
     h.step("cc", "", 0, "to plait (none,plait,wings)")
     h.step("b", "", 0, "equip plait")
     h.drain(1.5)
     d = _dump(h)
     if "/15/" in d.split("eq=")[-1]:
-        print("  PASS  Stella equipped RUMI PLAIT")
-        h.passed.append("stella equips rumi plait")
+        print("  PASS  Stella equipped REBECCA PLAIT")
+        h.passed.append("stella equips rebecca plait")
     else:
-        print(f"  FAIL  rumi plait: {d}")
-        h.failed.append("stella equips rumi plait")
+        print(f"  FAIL  rebecca plait: {d}")
+        h.failed.append("stella equips rebecca plait")
     # ---------- HUGO ----------
     h.step("x", PSEL, 6, "to PlayerSelect")
     h.step("a", "", 0, "highlight Hugo")
@@ -520,19 +520,19 @@ def script_final(h: Harness):
     h.step("ggg", "", 0, "grant 300")
     h.drain(1.2)
     _open_shop_category(h, 0)          # CHARACTERS
-    if _browse_to(h, "SPIDER-MAN"):
-        _buy(h, "SPIDER-MAN")
+    if _browse_to(h, "SPIDEY"):
+        _buy(h, "SPIDEY")
     h.step("E", r"CHARACTER", 5, "character select")
     h.step("c", "", 0, "next")
     h.step("b", "", 0, "equip")
     h.drain(1.5)
     d = _dump(h)
     if re.search(r"eq=65/", d):
-        print("  PASS  Hugo equipped SPIDER-MAN")
-        h.passed.append("hugo equips spiderman")
+        print("  PASS  Hugo equipped SPIDEY")
+        h.passed.append("hugo equips spidey")
     else:
-        print(f"  FAIL  spiderman: {d}")
-        h.failed.append("hugo equips spiderman")
+        print(f"  FAIL  spidey: {d}")
+        h.failed.append("hugo equips spidey")
     _open_shop_category(h, 5)          # TREATS
     if _browse_to(h, "BAG OF JELLY BEANS"):
         _buy(h, "BAG OF JELLY BEANS")
@@ -576,7 +576,7 @@ def script_final(h: Harness):
     h.step("b", r"->\s*HOME", 5, "Hugo home")
     d = _dump(h)
     if re.search(r"eq=65/", d) and re.search(r"jb=[1-9]", d):
-        print("  PASS  Spider-Man + jelly beans persisted")
+        print("  PASS  Spidey + jelly beans persisted")
         h.passed.append("persistence")
     else:
         print(f"  FAIL  persistence: {d}")
@@ -586,7 +586,7 @@ def script_final(h: Harness):
     h.step("b", r"->\s*HOME", 5, "Stella home")
     d = _dump(h)
     if re.search(r"eq=1/", d) and "/15/" in d.split("eq=")[-1]:
-        print("  PASS  Elsa + Rumi Plait persisted for Stella")
+        print("  PASS  Ella + Rebecca Plait persisted for Stella")
         h.passed.append("stella persistence")
     else:
         print(f"  FAIL  stella persistence: {d}")

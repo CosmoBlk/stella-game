@@ -16,8 +16,8 @@ Startup: "WHO'S PLAYING?" — two big cards [HUGO] [STELLA]. A=Hugo, C=Stella, B
 highlighted. Everything is fully separate per profile (coins, buddy, inventory, collections,
 tasks, missions, maths level, equipped items). Never mix.
 
-Themes — Hugo: soccer/dinos/sharks/Spider-Man/space/cowboys/robots; blue/green/orange/red.
-Stella: princesses/butterflies/sparkles/mermaids/unicorns/Rumi/music; pink/purple/turquoise/gold.
+Themes — Hugo: soccer/dinos/sharks/Spidey/space/cowboys/robots; blue/green/orange/red.
+Stella: princesses/butterflies/sparkles/mermaids/unicorns/Rebecca/music; pink/purple/turquoise/gold.
 Never colour-only signalling — pair with icons/shapes/labels.
 
 ## Home screen
@@ -111,8 +111,8 @@ Environments themed per catalog rooms.
 
 **Princess Dance** (Stella): 1-3 big coloured symbols aligned to A/B/C (pink star, blue
 snowflake, purple butterfly, yellow crown, red heart); pressing makes the selected princess
-dance. Starts single-symbol, later 2-3 step sequences. No punishment. Dancers: Elsa, Ariel,
-Rapunzel, Cinderella, Moana, Rumi. 1-5 coins; chance of accessory find/dance unlock.
+dance. Starts single-symbol, later 2-3 step sequences. No punishment. Dancers: Ella, Ariel,
+Raphy, Cindy, Mona, Rebecca. 1-5 coins; chance of accessory find/dance unlock.
 
 **Colour Match** (Stella): "FIND PINK!" big target; three objects on A/B/C (pink crown, blue
 butterfly, yellow star, purple dress, green frog, red apple, orange fish, white snowflake...).
@@ -144,7 +144,7 @@ Frankie discoveries, dad badges, game badges. Locked = silhouette + "?", e.g. "D
 
 ## Audio (synthesized, original)
 Button select, coin, purchase, pop, kick, goal, save, cheer, countdown, roar, splash,
-sparkle, Rumi music cue, jelly bean, bark, sleep music, mission complete, task complete,
+sparkle, Rebecca music cue, jelly bean, bark, sleep music, mission complete, task complete,
 hourglass tick, timer end. Volume: Off/Quiet/Normal in Settings (standard option, no parent
 mode).
 
@@ -154,7 +154,7 @@ timer 60->0 with hourglass + add-30; Frankie responds to real movement; dad miss
 3 daily missions each; penalty kick full flow with goalie + countdown + posts/misses;
 maths starts above counting and adapts across 6 categories; 12 dinosaurs; coaster + shark
 tilt; princess dance sequences; colour match + bubble pop pre-reader operable; Stella can buy
-and use Elsa/Ariel/Rapunzel/Cinderella/Moana/Rumi + Rumi Plait + Butterfly Wings; Hugo can
-buy and use Spider-Man/Woody/Buzz/Shark; jelly beans purchasable and usable by both; all
+and use Ella/Ariel/Raphy/Cindy/Mona/Rebecca + Rebecca Plait + Butterfly Wings; Hugo can
+buy and use Spidey/Cowboy/Astro/Shark; jelly beans purchasable and usable by both; all
 purchases + coins persist after restart/battery loss; no internet; no dead menu items; fully
 responsive on the Fire.

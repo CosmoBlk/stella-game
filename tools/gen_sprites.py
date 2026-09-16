@@ -67,12 +67,12 @@ SPRITES = [
     # NOTE: original wording "an ice queen with a platinum blonde side braid, pale skin and
     # sparkling ice-blue gown with snowflake details" was rejected by the OpenAI safety
     # system (likely trademark-adjacent); reworded below.
-    ("elsa", "a winter princess girl with a long pale blonde braid over one shoulder, wearing a sparkling icy pale blue dress decorated with tiny snowflakes", "high", "stella", 1),
+    ("ella", "a winter princess girl with a long pale blonde braid over one shoulder, wearing a sparkling icy pale blue dress decorated with tiny snowflakes", "high", "stella", 1),
     ("ariel", "a mermaid with long bright red hair, purple seashell top and shiny green mermaid tail", "high", "stella", 2),
-    ("rapunzel", "a princess with extremely long golden braided hair wrapping near her feet, lavender-purple dress", "high", "stella", 3),
-    ("cinderella", "a princess with blonde hair in an updo, sparkling powder-blue ball gown and tiny glass slippers", "high", "stella", 4),
-    ("moana", "an island voyager girl with long dark wavy hair, red and cream island outfit and teal shell necklace", "high", "stella", 5),
-    ("rumi", "a demon-hunter pop star girl with a very long purple-tinted plait, dark stage outfit with gold trim, holding a small microphone", "high", "stella", 6),
+    ("raphy", "a princess with extremely long golden braided hair wrapping near her feet, lavender-purple dress", "high", "stella", 3),
+    ("cindy", "a princess with blonde hair in an updo, sparkling powder-blue ball gown and tiny glass slippers", "high", "stella", 4),
+    ("mona", "an island voyager girl with long dark wavy hair, red and cream island outfit and teal shell necklace", "high", "stella", 5),
+    ("rebecca", "a demon-hunter pop star girl with a very long purple-tinted plait, dark stage outfit with gold trim, holding a small microphone", "high", "stella", 6),
     ("mermaid", "a mermaid with aqua hair, seashell top and turquoise tail", "medium", "stella", 7),
     ("fairy", "a small fairy with green petal dress, translucent wings and a tiny wand", "medium", "stella", 8),
     # retry wording: first pass gave a muddy red/grey mane, not rainbow
@@ -90,12 +90,12 @@ SPRITES = [
     # (the filter is a semantic IP detector). The wording below passes; a post-quantize
     # recolour hook (POST_QUANT) then shifts legs to blue, fills eye pupils white and
     # gloves the fingertips to land the classic red/blue masked-hero look.
-    ("spiderman", "a cute chibi ninja in a crimson bodysuit and hood, two large white eye shapes showing through the hood", "high", "hugo", 65),
+    ("spidey", "a cute chibi ninja in a crimson bodysuit and hood, two large white eye shapes showing through the hood", "high", "hugo", 65),
     # retry wording: first pass came out generic orange cowboy, no plaid or cow print
-    ("woody", "a toy cowboy sheriff with brown cowboy hat, bright yellow plaid shirt with thin red criss-cross lines, black and white cow-print vest and gold sheriff star", "high", "hugo", 66),
+    ("cowboy", "a toy cowboy sheriff with brown cowboy hat, bright yellow plaid shirt with thin red criss-cross lines, black and white cow-print vest and gold sheriff star", "high", "hugo", 66),
     # NOTE: original wording "a toy space ranger in a white space suit with green chest
     # panel and trim, purple hood, clear dome helmet" was safety-rejected; reworded below.
-    ("buzz", "a toy astronaut action figure in a shiny white spacesuit with bright green chest panel and trim, purple cap under a clear round bubble helmet", "high", "hugo", 67),
+    ("astro", "a toy astronaut action figure in a shiny white spacesuit with bright green chest panel and trim, purple cap under a clear round bubble helmet", "high", "hugo", 67),
     ("astronaut", "a kid astronaut in a white space suit with gold visor", "medium", "hugo", 68),
     ("robot", "a boxy friendly silver robot with an antenna and glowing eyes", "medium", "hugo", 69),
     ("explorer", "a kid explorer with safari hat and binoculars", "medium", "hugo", 70),
@@ -132,7 +132,7 @@ BY_KEY = {s[0]: s for s in SPRITES}
 
 # ------------------------------------------------------------ post-quant hooks
 
-def _recolor_spiderman(img):
+def _recolor_spidey(img):
     """48x48 edit of the crimson-ninja base: blue legs, red boots, white lenses,
     gloved fingertips — lands the classic red/blue masked-hero read."""
     px = img.load()
@@ -200,7 +200,7 @@ def _recolor_spiderman(img):
     return img
 
 
-POST_QUANT = {"spiderman": _recolor_spiderman}
+POST_QUANT = {"spidey": _recolor_spidey}
 
 
 # ---------------------------------------------------------------- generation

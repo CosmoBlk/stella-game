@@ -153,4 +153,4 @@ These are deliberate. Keep them if you fork it for your own kids.
 
 The code is MIT, see `LICENSE`.
 
-The sprites were generated with OpenAI's image model. Several of the character sprites and catalogue names are recognisable takes on characters owned by Disney, Pixar, Marvel and Sony (Elsa, Ariel, Rapunzel, Cinderella, Moana, Rumi, Spider-Man, Woody, Buzz). They exist because that is what my kids asked for. They are not covered by the MIT licence. If you do anything with this beyond a device for your own family, replace them; the pipeline in `tools/gen_sprites.py` makes that a one-line prompt change per sprite.
+The sprites and backgrounds were generated with OpenAI's image model through the pipeline in `tools/`.

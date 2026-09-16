@@ -5,8 +5,8 @@ Generated 2026-08-04 by `tools/gen_sprites.py`.
 ## Model
 
 - **gpt-image-1.5** (OpenAI `/v1/images/generations`), 1024x1024, `background: transparent`,
-  `output_format: png`. Quality `high` for the 9 hero characters (Elsa, Ariel, Rapunzel,
-  Cinderella, Moana, Rumi, Spider-Man, Woody, Buzz), `medium` for everything else.
+  `output_format: png`. Quality `high` for the 9 hero characters (Ella, Ariel, Raphy,
+  Cindy, Mona, Rebecca, Spidey, Cowboy, Astro), `medium` for everything else.
 - **Why not gpt-image-2:** it rejects the `background` parameter outright
   ("Transparent background is not supported for this model") and returns RGB with no
   alpha channel even when transparency is requested in the prompt (verified 2026-08-04).
@@ -30,8 +30,8 @@ on checkerboard: `assets/preview_montage.png`).
 
 | Group | Sprites | Files | Status |
 |---|---|---|---|
-| Stella characters (item ids 0-11) | default_princess, elsa, ariel, rapunzel, cinderella, moana, rumi, mermaid, fairy, unicorn, bunny, kitten | `assets/sprites_48/<name>.png` → `ART_<NAME>` | all clean |
-| Hugo characters (item ids 60-71) | soccer_player, dino_trainer, trex_character, raptor_character, shark_character, spiderman, woody, buzz, astronaut, robot, explorer, frankie | same | all clean |
+| Stella characters (item ids 0-11) | default_princess, ella, ariel, raphy, cindy, mona, rebecca, mermaid, fairy, unicorn, bunny, kitten | `assets/sprites_48/<name>.png` → `ART_<NAME>` | all clean |
+| Hugo characters (item ids 60-71) | soccer_player, dino_trainer, trex_character, raptor_character, shark_character, spidey, cowboy, astro, astronaut, robot, explorer, frankie | same | all clean |
 | Dinosaurs (collectible idx 0-11) | dino_00 … dino_11 (T-Rex … Pachycephalosaurus, CATALOG.md order) | `ART_DINO_00` … `ART_DINO_11` | all clean |
 | Sharks (collectible idx 0-5) | shark_00 … shark_05 (blue, hammerhead, great white, tiger, baby, robo) | `ART_SHARK_00` … `ART_SHARK_05` | all clean |
 | Extras | goalie | `ART_GOALIE` | clean |
@@ -39,20 +39,20 @@ on checkerboard: `assets/preview_montage.png`).
 ## Retries / incidents
 
 - **Safety-system rejections (semantic IP filter):** the original prompt wordings for
-  `elsa`, `spiderman` and `buzz` were rejected by OpenAI's safety system (HTTP 400,
+  `ella`, `spidey` and `astro` were rejected by OpenAI's safety system (HTTP 400,
   "rejected by the safety system") — the descriptions were too close to trademarked
-  characters. Elsa and Buzz passed after one rewording each ("winter princess…",
+  characters. Ella and Astro passed after one rewording each ("winter princess…",
   "toy astronaut action figure…"; final wordings live in the script manifest).
-- **Spider-Man took 12 attempts.** Eleven paraphrases were rejected — the filter caught
+- **Spidey took 12 attempts.** Eleven paraphrases were rejected — the filter caught
   every combination of red/blue suit + mask + big white eyes, even colour-swapped
   (orange/teal) and "luchador"/"balaclava"/"action figure" framings. The passing prompt is
   "a cute chibi ninja in a crimson bodysuit and hood, two large white eye shapes showing
-  through the hood"; a deterministic post-quantize hook (`_recolor_spiderman`) then turns
+  through the hood"; a deterministic post-quantize hook (`_recolor_spidey`) then turns
   legs blue, boots/gloves red, fills eye-lens pupils white and recolours exposed
   fingertips — landing the classic masked-hero read at 48px. Rejected requests produce
   no image (not billed as output).
 - **Quality retries (4 sprites, 5 images):** `unicorn` (mane came out muddy red/grey, not
-  rainbow), `woody` (generic orange cowboy, no plaid/cow-print), `shark_02` (jagged
+  rainbow), `cowboy` (generic orange cowboy, no plaid/cow-print), `shark_02` (jagged
   red-tinged tooth mouth — too scary for the SPEC's no-scary-imagery rule; second retry
   needed to force grey instead of teal), `shark_03` (no visible stripes). All four
   approved after retry.

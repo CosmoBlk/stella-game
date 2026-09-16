@@ -4,12 +4,12 @@
 
 namespace {
 const PixelArt kArt_default_princess = {48, 48, ART_DEFAULT_PRINCESS};
-const PixelArt kArt_elsa = {48, 48, ART_ELSA};
+const PixelArt kArt_ella = {48, 48, ART_ELLA};
 const PixelArt kArt_ariel = {48, 48, ART_ARIEL};
-const PixelArt kArt_rapunzel = {48, 48, ART_RAPUNZEL};
-const PixelArt kArt_cinderella = {48, 48, ART_CINDERELLA};
-const PixelArt kArt_moana = {48, 48, ART_MOANA};
-const PixelArt kArt_rumi = {48, 48, ART_RUMI};
+const PixelArt kArt_raphy = {48, 48, ART_RAPHY};
+const PixelArt kArt_cindy = {48, 48, ART_CINDY};
+const PixelArt kArt_mona = {48, 48, ART_MONA};
+const PixelArt kArt_rebecca = {48, 48, ART_REBECCA};
 const PixelArt kArt_mermaid = {48, 48, ART_MERMAID};
 const PixelArt kArt_fairy = {48, 48, ART_FAIRY};
 const PixelArt kArt_unicorn = {48, 48, ART_UNICORN};
@@ -20,9 +20,9 @@ const PixelArt kArt_dino_trainer = {48, 48, ART_DINO_TRAINER};
 const PixelArt kArt_trex_character = {48, 48, ART_TREX_CHARACTER};
 const PixelArt kArt_raptor_character = {48, 48, ART_RAPTOR_CHARACTER};
 const PixelArt kArt_shark_character = {48, 48, ART_SHARK_CHARACTER};
-const PixelArt kArt_spiderman = {48, 48, ART_SPIDERMAN};
-const PixelArt kArt_woody = {48, 48, ART_WOODY};
-const PixelArt kArt_buzz = {48, 48, ART_BUZZ};
+const PixelArt kArt_spidey = {48, 48, ART_SPIDEY};
+const PixelArt kArt_cowboy = {48, 48, ART_COWBOY};
+const PixelArt kArt_astro = {48, 48, ART_ASTRO};
 const PixelArt kArt_astronaut = {48, 48, ART_ASTRONAUT};
 const PixelArt kArt_robot = {48, 48, ART_ROBOT};
 const PixelArt kArt_explorer = {48, 48, ART_EXPLORER};
@@ -59,12 +59,12 @@ const PixelArt* const kSharks[6] = {
 const PixelArt* artForItem(uint16_t itemId) {
   switch (itemId) {
     case 0: return &kArt_default_princess;
-    case 1: return &kArt_elsa;
+    case 1: return &kArt_ella;
     case 2: return &kArt_ariel;
-    case 3: return &kArt_rapunzel;
-    case 4: return &kArt_cinderella;
-    case 5: return &kArt_moana;
-    case 6: return &kArt_rumi;
+    case 3: return &kArt_raphy;
+    case 4: return &kArt_cindy;
+    case 5: return &kArt_mona;
+    case 6: return &kArt_rebecca;
     case 7: return &kArt_mermaid;
     case 8: return &kArt_fairy;
     case 9: return &kArt_unicorn;
@@ -75,9 +75,9 @@ const PixelArt* artForItem(uint16_t itemId) {
     case 62: return &kArt_trex_character;
     case 63: return &kArt_raptor_character;
     case 64: return &kArt_shark_character;
-    case 65: return &kArt_spiderman;
-    case 66: return &kArt_woody;
-    case 67: return &kArt_buzz;
+    case 65: return &kArt_spidey;
+    case 66: return &kArt_cowboy;
+    case 67: return &kArt_astro;
     case 68: return &kArt_astronaut;
     case 69: return &kArt_robot;
     case 70: return &kArt_explorer;
