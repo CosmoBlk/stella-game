@@ -68,7 +68,7 @@ SPRITES = [
     # sparkling ice-blue gown with snowflake details" was rejected by the OpenAI safety
     # system (likely trademark-adjacent); reworded below.
     ("ella", "a winter princess girl with a long pale blonde braid over one shoulder, wearing a sparkling icy pale blue dress decorated with tiny snowflakes", "high", "stella", 1),
-    ("ariel", "a mermaid with long bright red hair, purple seashell top and shiny green mermaid tail", "high", "stella", 2),
+    ("ari", "a mermaid with long bright red hair, purple seashell top and shiny green mermaid tail", "high", "stella", 2),
     ("raphy", "a princess with extremely long golden braided hair wrapping near her feet, lavender-purple dress", "high", "stella", 3),
     ("cindy", "a princess with blonde hair in an updo, sparkling powder-blue ball gown and tiny glass slippers", "high", "stella", 4),
     ("mona", "an island voyager girl with long dark wavy hair, red and cream island outfit and teal shell necklace", "high", "stella", 5),

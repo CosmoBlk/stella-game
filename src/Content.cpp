@@ -7,7 +7,7 @@
 const ItemDef ITEMS[] = {
   ITEM(0, Character, StellaOnly, "DEFAULT PRINCESS", 0),
   ITEM(1, Character, StellaOnly, "ELLA", 160),
-  ITEM(2, Character, StellaOnly, "ARIEL", 150),
+  ITEM(2, Character, StellaOnly, "ARI", 150),
   ITEM(3, Character, StellaOnly, "RAPHY", 150),
   ITEM(4, Character, StellaOnly, "CINDY", 160),
   ITEM(5, Character, StellaOnly, "MONA", 150),
@@ -35,7 +35,7 @@ const ItemDef ITEMS[] = {
   ITEM(27, Clothing, StellaOnly, "RAINBOW DRESS", 60),
   ITEM(28, Clothing, StellaOnly, "PRINCESS DRESS", 55),
   ITEM(29, Clothing, StellaOnly, "ELLA ICE DRESS", 80),
-  ITEM(30, Clothing, StellaOnly, "ARIEL MERMAID OUTFIT", 75),
+  ITEM(30, Clothing, StellaOnly, "ARI MERMAID OUTFIT", 75),
   ITEM(31, Clothing, StellaOnly, "RAPHY PURPLE DRESS", 75),
   ITEM(32, Clothing, StellaOnly, "CINDY BALL GOWN", 80),
   ITEM(33, Clothing, StellaOnly, "MONA ISLAND OUTFIT", 70),

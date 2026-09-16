@@ -5,7 +5,7 @@
 namespace {
 const PixelArt kArt_default_princess = {48, 48, ART_DEFAULT_PRINCESS};
 const PixelArt kArt_ella = {48, 48, ART_ELLA};
-const PixelArt kArt_ariel = {48, 48, ART_ARIEL};
+const PixelArt kArt_ari = {48, 48, ART_ARI};
 const PixelArt kArt_raphy = {48, 48, ART_RAPHY};
 const PixelArt kArt_cindy = {48, 48, ART_CINDY};
 const PixelArt kArt_mona = {48, 48, ART_MONA};
@@ -60,7 +60,7 @@ const PixelArt* artForItem(uint16_t itemId) {
   switch (itemId) {
     case 0: return &kArt_default_princess;
     case 1: return &kArt_ella;
-    case 2: return &kArt_ariel;
+    case 2: return &kArt_ari;
     case 3: return &kArt_raphy;
     case 4: return &kArt_cindy;
     case 5: return &kArt_mona;

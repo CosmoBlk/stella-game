@@ -5,7 +5,7 @@ Generated 2026-08-04 by `tools/gen_sprites.py`.
 ## Model
 
 - **gpt-image-1.5** (OpenAI `/v1/images/generations`), 1024x1024, `background: transparent`,
-  `output_format: png`. Quality `high` for the 9 hero characters (Ella, Ariel, Raphy,
+  `output_format: png`. Quality `high` for the 9 hero characters (Ella, Ari, Raphy,
   Cindy, Mona, Rebecca, Spidey, Cowboy, Astro), `medium` for everything else.
 - **Why not gpt-image-2:** it rejects the `background` parameter outright
   ("Transparent background is not supported for this model") and returns RGB with no
@@ -30,7 +30,7 @@ on checkerboard: `assets/preview_montage.png`).
 
 | Group | Sprites | Files | Status |
 |---|---|---|---|
-| Stella characters (item ids 0-11) | default_princess, ella, ariel, raphy, cindy, mona, rebecca, mermaid, fairy, unicorn, bunny, kitten | `assets/sprites_48/<name>.png` → `ART_<NAME>` | all clean |
+| Stella characters (item ids 0-11) | default_princess, ella, ari, raphy, cindy, mona, rebecca, mermaid, fairy, unicorn, bunny, kitten | `assets/sprites_48/<name>.png` → `ART_<NAME>` | all clean |
 | Hugo characters (item ids 60-71) | soccer_player, dino_trainer, trex_character, raptor_character, shark_character, spidey, cowboy, astro, astronaut, robot, explorer, frankie | same | all clean |
 | Dinosaurs (collectible idx 0-11) | dino_00 … dino_11 (T-Rex … Pachycephalosaurus, CATALOG.md order) | `ART_DINO_00` … `ART_DINO_11` | all clean |
 | Sharks (collectible idx 0-5) | shark_00 … shark_05 (blue, hammerhead, great white, tiger, baby, robo) | `ART_SHARK_00` … `ART_SHARK_05` | all clean |

@@ -111,7 +111,7 @@ Environments themed per catalog rooms.
 
 **Princess Dance** (Stella): 1-3 big coloured symbols aligned to A/B/C (pink star, blue
 snowflake, purple butterfly, yellow crown, red heart); pressing makes the selected princess
-dance. Starts single-symbol, later 2-3 step sequences. No punishment. Dancers: Ella, Ariel,
+dance. Starts single-symbol, later 2-3 step sequences. No punishment. Dancers: Ella, Ari,
 Raphy, Cindy, Mona, Rebecca. 1-5 coins; chance of accessory find/dance unlock.
 
 **Colour Match** (Stella): "FIND PINK!" big target; three objects on A/B/C (pink crown, blue
@@ -154,7 +154,7 @@ timer 60->0 with hourglass + add-30; Frankie responds to real movement; dad miss
 3 daily missions each; penalty kick full flow with goalie + countdown + posts/misses;
 maths starts above counting and adapts across 6 categories; 12 dinosaurs; coaster + shark
 tilt; princess dance sequences; colour match + bubble pop pre-reader operable; Stella can buy
-and use Ella/Ariel/Raphy/Cindy/Mona/Rebecca + Rebecca Plait + Butterfly Wings; Hugo can
+and use Ella/Ari/Raphy/Cindy/Mona/Rebecca + Rebecca Plait + Butterfly Wings; Hugo can
 buy and use Spidey/Cowboy/Astro/Shark; jelly beans purchasable and usable by both; all
 purchases + coins persist after restart/battery loss; no internet; no dead menu items; fully
 responsive on the Fire.
