@@ -1,6 +1,6 @@
 # Pocket Buddy — Architecture & Conventions (contract for all builders)
 
-Read PLAN.md for scope. The headers in `src/` are the contract — implement against them
+Read SPEC.md for scope. The headers in `src/` are the contract — implement against them
 exactly; do not rename or restructure public interfaces without updating this doc.
 
 ## Hard conventions

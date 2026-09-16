@@ -12,15 +12,27 @@ matches or times out. All traffic is logged to qa_log.txt.
 
 Usage: python3 tools/qa_walkthrough.py [--port PORT] [--script NAME]
 """
-import argparse, re, sys, time
+import argparse, glob, os, re, sys, time
 
 try:
     import serial
 except ImportError:
     sys.exit("pyserial missing: python3 -m pip install --user pyserial")
 
-PORT = "/dev/cu.usbserial-5B090283871"
 BAUD = 115200
+
+
+def default_port():
+    """First USB serial device that looks like the Fire, or None."""
+    for pattern in ("/dev/cu.usbserial*", "/dev/cu.wchusbserial*", "/dev/cu.SLAB_USBtoUART*",
+                    "/dev/ttyUSB*", "/dev/ttyACM*"):
+        hits = sorted(glob.glob(pattern))
+        if hits:
+            return hits[0]
+    return None
+
+
+PORT = os.environ.get("POCKET_BUDDY_PORT") or default_port()
 
 
 class Harness:
@@ -610,6 +622,8 @@ def main():
     ap.add_argument("--port", default=PORT)
     ap.add_argument("--script", default="smoke", choices=sorted(SCRIPTS))
     args = ap.parse_args()
+    if not args.port:
+        sys.exit("no USB serial device found: pass --port or set POCKET_BUDDY_PORT")
     h = Harness(args.port)
     print(f"=== running {args.script} on {args.port} ===")
     SCRIPTS[args.script](h)

@@ -78,7 +78,7 @@ Budget was 60.
 - Dino idx order and shark idx order follow CATALOG.md collectibles exactly.
 - Sharks idx 0 (`shark_00`, collectible) and Hugo item 64 (`shark_character`) are
   different sprites; frankie (item 71) doubles as the Walk-Frankie dog art.
-- To regenerate anything: `set -a; . ~/.claude/.env; set +a` then
+- To regenerate anything: export `OPENAI_API_KEY`, then
   `python3 tools/gen_sprites.py gen <key> --force && python3 tools/gen_sprites.py quant <key> && python3 tools/gen_sprites.py emit && python3 tools/gen_sprites.py montage`.
 - Firmware was **not** compiled by this pipeline (per task scope).
 

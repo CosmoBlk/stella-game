@@ -1,6 +1,6 @@
 # Pocket Buddy — Game Specification (from the family brief)
 
-Private family device for Hugo (4) and Stella (2). Offline only. No parent mode, no PINs,
+Family device built for two small kids, Hugo and Stella. Offline only. No parent mode, no PINs,
 trust-based task completion. Never punish: no buddy death, no lost items, no negative streaks,
 no coin loss, no stressful failure states. Big graphics, minimal reading, three-button controls.
 

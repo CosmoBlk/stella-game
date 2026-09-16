@@ -19,7 +19,7 @@ Round 2 subcommands (kid tiles, room/UI backgrounds, 24x24 UI icons):
   rooms-montage
   icons-gen / icons-quant / icons-emit / icons-montage [name ...]
 
-Requires $OPENAI_API_KEY in the environment (source ~/.claude/.env first).
+Requires $OPENAI_API_KEY in the environment.
 """
 import argparse
 import base64
@@ -210,7 +210,7 @@ def api_generate(prompt: str, quality: str, size: str = "1024x1024",
     """One image generation call; returns decoded PNG bytes."""
     key = os.environ.get("OPENAI_API_KEY")
     if not key:
-        raise SystemExit("OPENAI_API_KEY not set (source ~/.claude/.env)")
+        raise SystemExit("OPENAI_API_KEY not set")
     payload = {
         "model": model or MODEL,
         "prompt": prompt,
